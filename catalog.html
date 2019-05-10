@@ -1,10 +1,246 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Каталог</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Каталог</title>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav">
+                <a class="main-header--logo" href="index.html">
+                    <!-- TODO: add width/height -->
+                    <img src="img/logo.svg" alt="Логотип 'Gllacy'">
+                </a>
+                <ul class="menu-list">
+                    <li class="menu--current"><a href="catalog.html">Каталог</a></li>
+                    <li><a href="delivery.html">Доставка и оплата</a></li>
+                    <li><a href="about.html">О Компании</a></li>
+                </ul>
+                <div class="user-nav">
+                    <a class="search-link">Поиск</a>
+                    <a class="login-link">Вход</a>
+                    <a class="cart-link cart--full">2 товара</a>
+                </div>
+            </nav>
+        </header>
 
-</body>
+        <main class="container">
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li class="breadcrumbs--current">Сливочное</li>
+            </ul>
+            <p class="work-hours">С 10 до 20, ежедневно</p>
+            <p class="phone">8 812 450-25-25</p>
+            <h1>Сливочное мороженое</h1>
+
+            <section class="filters">
+                <h2 class="visually--hidden">Фильтр товаров</h2>
+                <!-- TODO: make fitlers after it's learnt -->
+            </section>
+
+            <section class="catalog">
+                <h2 class="visually--hidden">Каталог товаров</h2>
+                <ul class="catalog-list">
+                    <li class="catalog-item">
+                        <h3>
+                            <a href="#">
+                                <span class="catalog-item--title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                            </a>
+                        </h3>
+                        <p class="catalog-item--image">
+                            <a href="#">
+                                <!-- TODO: add width/height -->
+                                <img src="img/product-1.jpeg" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+                            </a>
+                        </p>
+                        <p class="catalog-item--price">310 ₽<span>/кг</span></p>
+                    </li>
+                    <li class="catalog-item">
+                        <h3>
+                            <a href="#">
+                                <span class="catalog-item--title">Сливочно-кофейное с кусочками шоколада</span>
+                            </a>
+                        </h3>
+                        <p class="catalog-item--image">
+                            <a href="#">
+                                <!-- TODO: add width/height -->
+                                <img src="img/product-2.jpeg" alt="Сливочно-кофейное мороженок с кусочками шоколада">
+                            </a>
+                        </p>
+                        <p class="catalog-item--price">380 ₽<span>/кг</span></p>
+                    </li>
+                    <li class="catalog-item">
+                        <h3>
+                            <a href="#">
+                                <span class="catalog-item--title">Сливочно-клубничное с присыпкой из белого шоколада</span>
+                            </a>
+                        </h3>
+                        <p class="catalog-item--image">
+                            <a href="#">
+                                <!-- TODO: add width/height -->
+                                <img src="img/product-3.jpeg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+                            </a>
+                        </p>
+                        <p class="catalog-item--price">355 ₽<span>/кг</span></p>
+                    </li>
+                    <li class="catalog-item">
+                        <h3>
+                            <a href="#">
+                                <span class="catalog-item--title">Сливочное крем-брюле с карамельной подливкой</span>
+                            </a>
+                        </h3>
+                        <p class="catalog-item--image">
+                            <a href="#">
+                                <!-- TODO: add width/height -->
+                                <img src="img/product-4.jpeg" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
+                            </a>
+                        </p>
+                        <p class="catalog-item--price">415 ₽<span>/кг</span></p>
+                    </li>
+                    <li class="catalog-item">
+                        <h3>
+                            <a href="#">
+                                <span class="catalog-item--title">Сливочное с брусничным джемом</span>
+                            </a>
+                        </h3>
+                        <p class="catalog-item--image">
+                            <a href="#">
+                                <!-- TODO: add width/height -->
+                                <img src="img/product-5.jpeg" alt="Сливочное мороженое с брусничным джемом">
+                            </a>
+                        </p>
+                        <p class="catalog-item--price">325 ₽<span>/кг</span></p>
+                    </li>
+                    <li class="catalog-item">
+                        <h3>
+                            <a href="#">
+                                <span class="catalog-item--title">Сливочно-черничное с цельными ягодами черники</span>
+                            </a>
+                        </h3>
+                        <p class="catalog-item--image">
+                            <a href="#">
+                                <!-- TODO: add width/height -->
+                                <img src="img/product-6.jpeg" alt="Сливочно-черничное мороженое с цельными ягодами черники">
+                            </a>
+                        </p>
+                        <p class="catalog-item--price">410 ₽<span>/кг</span></p>
+                    </li>
+                    <li class="catalog-item">
+                        <h3>
+                            <a href="#">
+                                <span class="catalog-item--title">Сливочно-лимонное с карамельной присыпкой</span>
+                            </a>
+                        </h3>
+                        <p class="catalog-item--image">
+                            <a href="#">
+                                <!-- TODO: add width/height -->
+                                <img src="img/product-7.jpeg" alt="Сливочно-лимонное мороженое с карамельной присыпкой">
+                            </a>
+                        </p>
+                        <p class="catalog-item--price">375 ₽<span>/кг</span></p>
+                    </li>
+                    <li class="catalog-item">
+                        <h3>
+                            <a href="#">
+                                <span class="catalog-item--title">Сливочное с шоколадной стружкой</span>
+                            </a>
+                        </h3>
+                        <p class="catalog-item--image">
+                            <a href="#">
+                                <!-- TODO: add width/height -->
+                                <img src="img/product-8.jpeg" alt="Сливочное мороженое с шоколадной стружкой">
+                            </a>
+                        </p>
+                        <p class="catalog-item--price">320 ₽<span>/кг</span></p>
+                    </li>
+                    <li class="catalog-item">
+                        <h3>
+                            <a href="#">
+                                <span class="catalog-item--title">Сливочно-ванильное с кусочками шоколада</span>
+                            </a>
+                        </h3>
+                        <p class="catalog-item--image">
+                            <a href="#">
+                                <!-- TODO: add width/height -->
+                                <img src="img/product-9.jpeg" alt="Сливочно-ванильное мороженое с кусочками шоколада">
+                            </a>
+                        </p>
+                        <p class="catalog-item--price">440 ₽<span>/кг</span></p>
+                    </li>
+                    <li class="catalog-item">
+                        <h3>
+                            <a href="#">
+                                <span class="catalog-item--title">Сливочноe с ментоловым сиропом</span>
+                            </a>
+                        </h3>
+                        <p class="catalog-item--image">
+                            <a href="#">
+                                <!-- TODO: add width/height -->
+                                <img src="img/product-10.jpeg" alt="Сливочноe мороженое с ментоловым сиропом">
+                            </a>
+                        </p>
+                        <p class="catalog-item--price">435 ₽<span>/кг</span></p>
+                    </li>
+                    <li class="catalog-item">
+                        <h3>
+                            <a href="#">
+                                <span class="catalog-item--title">Сливочное с кусочками черного шоколада</span>
+                            </a>
+                        </h3>
+                        <p class="catalog-item--image">
+                            <a href="#">
+                                <!-- TODO: add width/height -->
+                                <img src="img/product-11.jpeg" alt="Сливочное мороженое с кусочками черного шоколада">
+                            </a>
+                        </p>
+                        <p class="catalog-item--price">355 ₽<span>/кг</span></p>
+                    </li>
+                    <li class="catalog-item">
+                        <h3>
+                            <a href="#">
+                                <span class="catalog-item--title">Сливочное с мятным сиропом</span>
+                            </a>
+                        </h3>
+                        <p class="catalog-item--image">
+                            <a href="#">
+                                <!-- TODO: add width/height -->
+                                <img src="img/product-12.jpeg" alt="Сливочное мороженое с мятным сиропом">
+                            </a>
+                        </p>
+                        <p class="catalog-item--price">420 ₽<span>/кг</span></p>
+                    </li>
+                </ul>
+                <ul class="pagination-list">
+                    <li class="pagination-item pagination-item--current"><a href="#">1</a></li>
+                    <li class="pagination-item"><a>2</a></li>
+                    <li class="pagination-item"><a href="#">3</a></li>
+                    <li class="pagination-item"><a href="#">4</a></li>
+                    <li class="pagination-item"><a href="#">5</a></li>
+                </ul>
+            </section>
+
+            <footer class="main-footer">
+                <ul class="footer-social">
+                    <li><a class="btn-social" href="#">Twitter</a></li>
+                    <li><a class="btn-social" href="#">Instagram</a></li>
+                    <li><a class="btn-social" href="#">Facebook</a></li>
+                    <li><a class="btn-social" href="#">VK</a></li>
+                </ul>
+                <ul class="footer-info-list">
+                    <li><b>Для поставщиков</b></li>
+                    <li><a class="footer-info-item" href="#">О производстве</a></li>
+                    <li><a class="footer-info-item" href="#">Наши документы</a></li>
+                    <li><a class="footer-info-item" href="#">Экологические стандарты</a></li>
+                </ul>
+                <div class="footer-copyright">
+                    <a href="https://htmlacademy.ru">
+                        <!-- TODO: add width/height -->
+                        <img src="img/html-academy-logo.svg" alt="Логотип HTML Academy">
+                    </a>
+                    <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a>© 2019</p>
+                </div>
+            </footer>
+        </main>
+    </body>
 </html>
