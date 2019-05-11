@@ -53,10 +53,17 @@
 
                     <label for="fat">Жирность:</label>
                     <div class="filter-fat" id="fat">
-                        <input type="radio" name="fat" value="0"> 0%
-                        <input type="radio" name="fat" value="10" checked> до 10%
-                        <input type="radio" name="fat" value="30"> до 30%
-                        <input type="radio" name="fat" value="1"> выше 30%
+                        <label for="percentage-0">0%</label>
+                        <input id="percentage-0" type="radio" name="fat">
+
+                        <label for="percentage-10">до 10%</label>
+                        <input id="percentage-10" type="radio" name="fat" checked>
+
+                        <label for="percentage-30">до 30%</label>
+                        <input id="percentage-30" type="radio" name="fat">
+
+                        <label for="percentage-1">выше 30%</label>
+                        <input id="percentage-1" type="radio" name="fat">
                     </div>
 
                     <label for="fillers">Наполнители:</label>
