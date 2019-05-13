@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="13px" viewBox="0 0 15 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>heart</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index" transform="translate(-427.000000, -2349.000000)" fill="#FFFFFF">
+            <g id="Подвал" transform="translate(26.000000, 2310.000000)">
+                <g id="Меню" transform="translate(401.000000, 35.000000)">
+                    <g id="heart" transform="translate(0.000000, 4.000000)">
+                        <g id="Shape">
+                            <path d="M10.799,0 C9.449,0 8.248,0.65 7.499,1.661 C6.72522937,0.614649322 5.5003713,-0.00186257291 4.199,-4.54858387e-16 C1.875,0 0,1.806 0,4.044 C0,7.223 7.499,13 7.499,13 C7.499,13 14.998,7.223 14.998,4.044 C14.998,1.806 13.123,0 10.799,0 Z" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
