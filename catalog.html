@@ -18,7 +18,7 @@
                 <div class="user-nav">
                     <a class="search-link">Поиск</a>
                     <a class="login-link">Вход</a>
-                    <a class="cart-link cart--full">2 товара</a>
+                    <a class="cart-link cart--full" href="#">2 товара</a>
                 </div>
             </nav>
         </header>
@@ -46,23 +46,23 @@
 
                     <label for="price">Цена: 100 руб. – 500 руб.</label>
                     <div class="filter-price" id="price">
-                        <button class="price-min">
-                        <button class="price-max">
+                        <button class="price-min" type="button"></button>
+                        <button class="price-max" type="button"></button>
                     </div>
 
                     <label for="fat">Жирность:</label>
                     <div class="filter-fat" id="fat">
                         <label for="percentage-0">0%</label>
-                        <input id="percentage-0" type="radio" name="fat">
+                        <input id="percentage-0" type="radio" name="fat" value="0">
 
                         <label for="percentage-10">до 10%</label>
-                        <input id="percentage-10" type="radio" name="fat" checked>
+                        <input id="percentage-10" type="radio" name="fat" value="10" checked>
 
                         <label for="percentage-30">до 30%</label>
-                        <input id="percentage-30" type="radio" name="fat">
+                        <input id="percentage-30" type="radio" name="fat" value="30">
 
                         <label for="percentage-1">выше 30%</label>
-                        <input id="percentage-1" type="radio" name="fat">
+                        <input id="percentage-1" type="radio" name="fat" value="1">
                     </div>
 
                     <label for="fillers">Наполнители:</label>
@@ -83,7 +83,7 @@
                         <input id="jam" name="jam" type="checkbox">
                     </div>
 
-                    <input type="submit" value="Применить">
+                    <button class="submit" type="submit">Применить</button>
                 </form>
             </section>
 
@@ -107,7 +107,7 @@
                         </h3>
                         <p class="catalog-item--image">
                             <a href="#">
-                                <img src="img/content/product-2.jpg" alt="Сливочно-кофейное мороженок с кусочками шоколада" width="267" height="267">
+                                <img src="img/content/product-2.jpg" alt="Сливочно-кофейное мороженое с кусочками шоколада" width="267" height="267">
                             </a>
                         </p>
                         <p class="catalog-item--price">380 ₽<span>/кг</span></p>
@@ -195,7 +195,7 @@
                         </h3>
                         <p class="catalog-item--image">
                             <a href="#">
-                                <img src="img/content/product-10.jpg" alt="Сливочноe мороженое с ментоловым сиропом" width="267" height="267">
+                                <img src="img/content/product-10.jpg" alt="Сливочное мороженое с ментоловым сиропом" width="267" height="267">
                             </a>
                         </p>
                         <p class="catalog-item--price">435 ₽<span>/кг</span></p>

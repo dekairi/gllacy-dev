@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>Gllacy</title>
+        <title>Магазин мороженого Gllacy</title>
     </head>
     <body>
         <header class="main-header">
@@ -45,9 +45,9 @@
                 </div>
 
                 <ul class="slider-dots-list">
-                    <li class="slider-dot-item slider-dot-item--current"></li>
-                    <li class="slider-dot-item"></li>
-                    <li class="slider-dot-item"></li>
+                    <li><button type="button" class="slider-dot-item slider-dot-item--current"></button></li>
+                    <li><button type="button" class="slider-dot-item"></button></li>
+                    <li><button type="button" class="slider-dot-item"></button></li>
                 </ul>
             </section>
 
@@ -91,7 +91,7 @@
                         </h3>
                         <p class="catalog-item--image">
                             <a href="#">
-                                <img src="img/content/product-2.jpg" alt="Сливочно-кофейное мороженок с кусочками шоколада" width="267" height="267">
+                                <img src="img/content/product-2.jpg" alt="Сливочно-кофейное мороженое с кусочками шоколада" width="267" height="267">
                             </a>
                         </p>
                         <p class="catalog-item--price">380 ₽<span>/кг</span></p>
@@ -144,8 +144,8 @@
             <article class="subscription">
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form action="http://echo.htmlacademy.ru" method="post">
-                    <input type="email" placeholder="Электронная почта">
-                    <input class="btn" type="submit" value="Отправить">
+                    <input type="email" placeholder="Электронная почта" aria-label="Электронная почта">
+                    <button class="btn" type="submit">Отправить</button>
                 </form>
             </article>
 
@@ -153,6 +153,7 @@
                 <!-- TODO: finish the map after JS (Yandex/Google) -->
                 <h2 class="visually--hidden">Мы на карте</h2>
                 <div id="map"></div>
+                <img src="img/content/map.png" alt="Магазин расположен по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
             </section>
 
             <section class="contacts">
@@ -188,5 +189,45 @@
                 <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>© 2019</p>
             </div>
         </footer>
+
+        <section class="modal modal-login">
+            <h2 class="visually--hidden">Вход в личный кабинет</h2>
+            <form action="http://echo.htmlacademy.ru" method="post">
+                <input type="email" placeholder="Электронная почта" aria-label="Электронная почта" required>
+                <input type="password" placeholder="Пароль" aria-label="Пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+        </section>
+
+        <section class="modal modal-catalog-menu">
+            <h2 class="visually--hidden">Меню каталога</h2>
+            <ul class="catalog-menu-list">
+                <li><a class="catalog-menu-item catalog-menu-item-new" href="#">Новинки</a></li>
+                <li><a class="catalog-menu-item" href="#">Сливочное</a></li>
+                <li><a class="catalog-menu-item" href="#">Щербеты</a></li>
+                <li><a class="catalog-menu-item" href="#">Фруктовый лёд</a></li>
+                <li><a class="catalog-menu-item" href="#">Мелорин</a></li>
+            </ul>
+        </section>
+
+        <section class="modal modal-search">
+            <h2 class="visually--hidden">Поиск</h2>
+            <form action="http://echo.htmlacademy.ru" method="post">
+                <input type="submit" placeholder="Что ищем?" aria-label="Что ищем?">
+            </form>
+        </section>
+
+        <section class="modal modal-feedback">
+            <b>Мы обязательно вам ответим!</b>
+            <h2 class="visually--hidden">Обратная связь</h2>
+            <form action="http://echo.htmlacademy.ru" method="post">
+                <input type="text" placeholder="Как вас зовут?" aria-label="Имя" required>
+                <input type="email" placeholder="Ваша почта для ответа?" aria-label="Электронная почта" required>
+                <textarea placeholder="Напишите что-нибудь..." aria-label="Текст-обращения" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
     </body>
 </html>
