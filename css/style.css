@@ -112,9 +112,30 @@ a {
     line-height: 24px;
 }
 
-/* TODO: bonus */
-.slider {
+.slider .slide-1 {
+    background: #BE6D12 url("../img/bg/slider-1.png") no-repeat center center;
+}
+.slider .slide-2 {
     display: none;
+    background: #BE6D12 url("../img/bg/slider-2.png") no-repeat center center;
+}
+
+.slider .slide-3 {
+    display: none;
+    background: #BE6D12 url("../img/bg/slider-3.png") no-repeat center center;
+}
+
+.slider p {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.slider-dots-list {
+    list-style: none;
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
 }
 
 .visually--hidden {
@@ -362,9 +383,32 @@ a {
     display: none;
 }
 
-/* TODO: bonus */
-.filters {
-    display: none;
+.filters label {
+    font-weight: medium;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.filters option:first-child {
+    line-height: 21px;
+}
+
+.filters .submit {
+    font-weight: medium;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #FFFFFF;
+}
+
+.filters .submit:hover,
+.filters .submit:focus {
+    background-color: #FFFFFF;
+    color: #323232;
+}
+
+.filters .submit:active {
+    /* TODO: add shadow */
 }
 
 .breadcrumbs {
