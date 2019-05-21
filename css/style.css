@@ -1,21 +1,21 @@
 @font-face {
-    font-family: "Roboto Bold";
+    font-family: "Roboto";
     src: url("../fonts/robotobold.woff") format("woff"), url("../fonts/robotobold.woff2") format("woff2");
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Roboto Regular";
+    font-family: "Roboto";
     src: url("../fonts/roboto.woff") format("woff"), url("../fonts/roboto.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Roboto Medium";
+    font-family: "Roboto";
     src: url("../fonts/robotomedium.woff") format("woff"), url("../fonts/robotomedium.woff2") format("woff2");
-    font-weight: normal;
+    font-weight: medium;
     font-style: normal;
 }
 
@@ -23,7 +23,8 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: "Roboto Bold", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: bold;
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
@@ -45,7 +46,7 @@ a {
 }
 
 .user-nav-list {
-    font-family: "Roboto Medium", Arial, sans-serif;
+    font-weight: medium;
     line-height: 16px;
     font-size: 14px;
 }
@@ -190,7 +191,7 @@ a {
 
 .catalog-item .catalog-item--title {
     color: #F7F6F3;
-    font-family: "Roboto Medium", Arial, sans-serif;
+    font-weight: medium;
     font-size: 16px;
     line-height: 22px;
     border-bottom: 1px solid rgba(247, 246, 243, 0.5);
@@ -223,14 +224,14 @@ a {
 }
 
 .features b {
-    font-family: "Roboto Medium", Arial, sans-serif;
+    font-weight: medium;
     font-size: 24px;
     line-height: 30px;
 }
 
 .features-list .feature-item {
     list-style: none;
-    font-family: "Roboto Regular", Arial, sans-serif;
+    font-weight: normal;
     font-size: 16px;
     line-height: 22px;
 }
@@ -242,7 +243,7 @@ a {
 }
 
 .blog b {
-    font-family: "Roboto Medium", Arial, sans-serif;
+    font-weight: medium;
     font-size: 16px;
     line-height: 22px;
 }
@@ -274,7 +275,7 @@ a {
 }
 
 .subscription p {
-    font-family: "Roboto Regular", Arial, sans-serif;
+    font-weight: normal;
     font-size: 16px;
     line-height: 22px;
     color: #5A5A5A;
@@ -282,7 +283,7 @@ a {
 }
 
 .subscription input::placeholder {
-    font-family: "Roboto Regular", Arial, sans-serif;
+    font-weight: normal;
     color: #999999;
     font-size: 16px;
     line-height: 24px;
@@ -295,7 +296,7 @@ a {
 }
 
 .contacts address {
-    font-family: "Roboto Regular", Arial, sans-serif;
+    font-weight: normal;
     font-size: 14px;
     line-height: 20px;
     font-style: normal;
@@ -303,7 +304,7 @@ a {
 
 .contacts .contacts-phone,
 .contacts .contacts-address {
-    font-family: "Roboto Bold", Arial, sans-serif;
+    font-weight: bold;
     font-size: 18px;
     line-height: 24px;
     color: #323232;
@@ -322,7 +323,7 @@ a {
 
 .footer-info-item a {
     color: #FFFFFF;
-    font-family: "Roboto Regular", Arial, sans-serif;
+    font-weight: normal;
     font-size: 13px;
     line-height: 16px;
     border-bottom: 1px solid rgba(247, 246, 243, 0.5);
@@ -336,13 +337,13 @@ a {
 }
 
 .footer-info-item:first-child a {
-    font-family: "Roboto Bold", Arial, sans-serif;
+    font-weight: bold;
 }
 
 .footer-copyright p,
 .footer-copyright .footer-copyright--link {
     color: #FFFFFF;
-    font-family: "Roboto Regular", Arial, sans-serif;
+    font-weight: normal;
     font-size: 12px;
     line-height: 16px;
 }
@@ -374,7 +375,7 @@ a {
 .breadcrumbs a,
 .breadcrumbs .breadcrumbs--current {
     color: #FFFFFF;
-    font-family: "Roboto Regular", Arial, sans-serif;
+    font-weight: normal;
     font-size: 14px;
     line-height: 16px;
     border-bottom: 1px solid rgba(247, 246, 243, 0.5);
@@ -384,7 +385,7 @@ a {
 .breadcrumbs a:focus,
 .breadcrumbs a:active {
     color: #FFBC9E;
-    font-family: "Roboto Regular", Arial, sans-serif;
+    font-weight: normal;
     font-size: 14px;
     line-height: 16px;
     border-bottom: 1px solid rgba(255, 188, 158, 0.5);
@@ -406,7 +407,7 @@ a {
 .pagination-list a {
     color: #FFFFFF;
     background-color: transparent;
-    font-family: "Roboto Medium", Arial, sans-serif;
+    font-weight: medium;
     font-size: 16px;
     line-height: 18px;
 }
@@ -418,7 +419,7 @@ a {
 .pagination-list .pagination-item--current {
     color: #323232;
     background-color: #FFFFFF;
-    font-family: "Roboto Medium", Arial, sans-serif;
+    font-weight: medium;
     font-size: 16px;
     line-height: 18px;
 }
