@@ -1,21 +1,21 @@
 @font-face {
     font-family: "Roboto";
     src: url("../fonts/robotobold.woff") format("woff"), url("../fonts/robotobold.woff2") format("woff2");
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Roboto";
     src: url("../fonts/roboto.woff") format("woff"), url("../fonts/roboto.woff2") format("woff2");
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Roboto";
     src: url("../fonts/robotomedium.woff") format("woff"), url("../fonts/robotomedium.woff2") format("woff2");
-    font-weight: medium;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -24,7 +24,7 @@ body {
     padding: 0;
 
     font-family: "Roboto", Arial, sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
@@ -46,7 +46,7 @@ a {
 }
 
 .user-nav-list {
-    font-weight: medium;
+    font-weight: 500;
     line-height: 16px;
     font-size: 14px;
 }
@@ -206,12 +206,12 @@ a {
 .catalog-list .catalog-item:hover {
     border-radius: 5px;
     background-color: rgba(248, 247, 244, 0.2);
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .catalog-item .catalog-item--title {
     color: #F7F6F3;
-    font-weight: medium;
+    font-weight: 500;
     font-size: 16px;
     line-height: 22px;
     border-bottom: 1px solid rgba(247, 246, 243, 0.5);
@@ -244,14 +244,14 @@ a {
 }
 
 .features b {
-    font-weight: medium;
+    font-weight: 500;
     font-size: 24px;
     line-height: 30px;
 }
 
 .features-list .feature-item {
     list-style: none;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
 }
@@ -263,7 +263,7 @@ a {
 }
 
 .blog b {
-    font-weight: medium;
+    font-weight: 500;
     font-size: 16px;
     line-height: 22px;
 }
@@ -295,7 +295,7 @@ a {
 }
 
 .subscription p {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #5A5A5A;
@@ -303,7 +303,7 @@ a {
 }
 
 .subscription input::placeholder {
-    font-weight: normal;
+    font-weight: 400;
     color: #999999;
     font-size: 16px;
     line-height: 24px;
@@ -316,7 +316,7 @@ a {
 }
 
 .contacts address {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     font-style: normal;
@@ -324,7 +324,7 @@ a {
 
 .contacts .contacts-phone,
 .contacts .contacts-address {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 24px;
     color: #323232;
@@ -343,7 +343,7 @@ a {
 
 .footer-info-item a {
     color: #FFFFFF;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     border-bottom: 1px solid rgba(247, 246, 243, 0.5);
@@ -363,7 +363,7 @@ a {
 .footer-copyright p,
 .footer-copyright .footer-copyright--link {
     color: #FFFFFF;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 12px;
     line-height: 16px;
 }
@@ -384,7 +384,7 @@ a {
 }
 
 .filters label {
-    font-weight: medium;
+    font-weight: 500;
     font-size: 14px;
     line-height: 16px;
 }
@@ -394,7 +394,7 @@ a {
 }
 
 .filters .submit {
-    font-weight: medium;
+    font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -418,7 +418,7 @@ a {
 .breadcrumbs a,
 .breadcrumbs .breadcrumbs--current {
     color: #FFFFFF;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     border-bottom: 1px solid rgba(247, 246, 243, 0.5);
@@ -428,7 +428,7 @@ a {
 .breadcrumbs a:focus,
 .breadcrumbs a:active {
     color: #FFBC9E;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     border-bottom: 1px solid rgba(255, 188, 158, 0.5);
@@ -450,7 +450,7 @@ a {
 .pagination-list a {
     color: #FFFFFF;
     background-color: transparent;
-    font-weight: medium;
+    font-weight: 500;
     font-size: 16px;
     line-height: 18px;
 }
@@ -462,7 +462,7 @@ a {
 .pagination-list .pagination-item--current {
     color: #323232;
     background-color: #FFFFFF;
-    font-weight: medium;
+    font-weight: 500;
     font-size: 16px;
     line-height: 18px;
 }
