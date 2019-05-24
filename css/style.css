@@ -421,6 +421,8 @@ a {
 
 .article--wrap {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 40px;
 }
 
@@ -428,9 +430,9 @@ a {
     background: #F7F6F3 url("../img/bg/strawberry.jpg") no-repeat 10% 42%;
     color: #323232;
     border-radius: 15px;
-    margin-right: 15px;
     width: 560px;
     padding: 28px 25px;
+    box-sizing: border-box;
 }
 
 .blog b {
@@ -469,7 +471,6 @@ a {
     border-image-repeat: round;
     border-image-slice: 8;
     position: relative;
-    margin-left: 15px;
     width: 560px;
     padding: 40px 25px;
     box-sizing: border-box;
