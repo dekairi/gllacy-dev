@@ -9,59 +9,98 @@
     <body>
         <header class="main-header">
             <nav class="main-nav">
-                <a class="main-header--logo" href="index.html">
-                    <img src="img/icons/logo.svg" alt="Логотип 'Gllacy'" width="154" height="64">
-                </a>
-                <ul class="menu-list">
-                    <li><a class="menu--current" href="catalog.html">Каталог</a></li>
-                    <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="#">О Компании</a></li>
-                </ul>
-                <ul class="user-nav-list">
-                    <li><a class="search-link" href="#">Поиск</a></li>
-                    <li><a class="login-link" href="#">Вход</a></li>
-                    <li>
-                        <a class="cart-link cart--full" href="#">2 товара</a>
-                        <section class="cart">
-                            <h2 class="visually--hidden">Моя корзина</h2>
-                            <form action="http://echo.htmlacademy.ru" method="post">
-                                <ul class="cart-list">
-                                    <li class="cart-item">
-                                        <button class="remove-btn" type="button">Удалить позицию</button>
-                                        <a href="#">
-                                           <img src="img/content/product-1-small.jpg" alt="Промбир с апельсиновым джемом" width="33" height="33">
-                                            <p>Промбир с апельсиновым джемом</p>
-                                        </a>
-                                        <p class="count-price">1,5 кг х <span>200 руб.</span></p>
-                                        <p class="price">300 руб.</p>
-                                    </li>
-                                    <li class="cart-item">
-                                        <button class="remove-btn" type="button">Удалить позицию</button>
-                                        <a href="#">
-                                            <img src="img/content/product-3-small.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
-                                            <p>Клубничный пломбир с присыпкой из белого шоколада</p>
-                                        </a>
-                                        <p class="count-price">1,5 кг х <span>300 руб.</span></p>
-                                        <p class="price">450 руб.</p>
-                                    </li>
+                <div class="header--wrap">
+                    <a class="main-header--logo" href="index.html">
+                        <img src="img/icons/logo.svg" alt="Логотип 'Gllacy'" width="154" height="64">
+                    </a>
+                    <ul class="menu-list">
+                        <li>
+                            <a class="menu--current" href="catalog.html">Каталог</a>
+                            <section class="catalog-menu">
+                                <h2 class="visually--hidden">Меню каталога</h2>
+                                <ul class="catalog-menu-list">
+                                    <li><a class="catalog-menu-item catalog-menu-item-new" href="#">Новинки</a></li>
+                                    <li><a class="catalog-menu-item" href="catalog.html">Сливочное</a></li>
+                                    <li><a class="catalog-menu-item" href="#">Щербеты</a></li>
+                                    <li><a class="catalog-menu-item" href="#">Фруктовый лёд</a></li>
+                                    <li><a class="catalog-menu-item" href="#">Мелорин</a></li>
                                 </ul>
-                                <b>Итого: 750 руб.</b>
-                                <button type="submit">Оформить заказ</button>
-                            </form>
-                        </section>
-                    </li>
-                </ul>
-                <p class="work-hours">С 10 до 20, ежедневно</p>
-                <p class="phone">8 812 450-25-25</p>
+                            </section>
+                        </li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">О Компании</a></li>
+                    </ul>
+                    <ul class="user-nav-list">
+                        <li>
+                            <a class="search-link" href="#">Поиск</a>
+                            <section class="search">
+                                <h2 class="visually--hidden">Поиск</h2>
+                                <form action="http://echo.htmlacademy.ru" method="get">
+                                    <input type="text" placeholder="Что ищем?" aria-label="Что ищем?">
+                                </form>
+                            </section>
+                        </li>
+                        <li>
+                            <a class="login-link" href="#">Вход</a>
+                            <section class="login">
+                                <h2 class="visually--hidden">Вход в личный кабинет</h2>
+                                <form action="http://echo.htmlacademy.ru" method="post">
+                                    <input type="email" placeholder="Электронная почта" aria-label="Электронная почта" required>
+                                    <input type="password" placeholder="Пароль" aria-label="Пароль" required>
+                                    <button type="submit">Войти</button>
+                                </form>
+                                <a href="#">Забыли пароль?</a>
+                                <a href="#">Новая регистрация</a>
+                            </section>
+                        </li>
+                            <li>
+                                <a class="cart-link cart--full" href="#">2 товара</a>
+                                <section class="cart">
+                                    <h2 class="visually--hidden">Моя корзина</h2>
+                                    <form action="http://echo.htmlacademy.ru" method="post">
+                                        <ul class="cart-list">
+                                            <li class="cart-item">
+                                                <button class="remove-btn" type="button">Удалить позицию</button>
+                                                <a href="#">
+                                                   <img src="img/content/product-1-small.jpg" alt="Промбир с апельсиновым джемом" width="33" height="33">
+                                                    <p>Промбир с апельсиновым джемом</p>
+                                                </a>
+                                                <p class="count-price">1,5 кг х <span>200 руб.</span></p>
+                                                <p class="price">300 руб.</p>
+                                            </li>
+                                            <li class="cart-item">
+                                                <button class="remove-btn" type="button">Удалить позицию</button>
+                                                <a href="#">
+                                                    <img src="img/content/product-3-small.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
+                                                    <p>Клубничный пломбир с присыпкой из белого шоколада</p>
+                                                </a>
+                                                <p class="count-price">1,5 кг х <span>300 руб.</span></p>
+                                                <p class="price">450 руб.</p>
+                                            </li>
+                                        </ul>
+                                        <b>Итого: 750 руб.</b>
+                                        <button type="submit">Оформить заказ</button>
+                                    </form>
+                                </section>
+                            </li>
+                    </ul>
+                </div>
+                <div class="nav-wrap">
+                    <ul class="breadcrumbs">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li class="breadcrumbs--current"><a>Сливочное</a></li>
+                    </ul>
+                    <div class="work-info">
+                        <p class="work-hours">С 10 до 20, ежедневно</p>
+                        <p class="phone">8 812 450-25-25</p>
+                    </div>
+                </div>
+
             </nav>
         </header>
 
         <main class="container">
-            <ul class="breadcrumbs">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="#">Каталог</a></li>
-                <li class="breadcrumbs--current">Сливочное</li>
-            </ul>
             <h1>Сливочное мороженое</h1>
 
             <section class="filters">

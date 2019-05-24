@@ -20,8 +20,8 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 27px;
 
     font-family: "Roboto", Arial, sans-serif;
     font-weight: 700;
@@ -30,15 +30,39 @@ body {
     color: #FFFFFF;
 
     background-color: #849D8F;
+    width: 1200px;
 }
 
 a {
     text-decoration: none;
 }
 
+.main-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-nav .header--wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+}
+
 .menu-list,
 .user-nav-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-list {
+    margin-right: 45px;
+}
+
+.main-header--logo {
+    margin-right: 24px;
 }
 
 .catalog-menu {
@@ -49,6 +73,7 @@ a {
     font-weight: 500;
     line-height: 16px;
     font-size: 14px;
+    margin-left: 330px;
 }
 
 .search {
@@ -61,28 +86,43 @@ a {
 
 .menu-list a {
     color: #F7F6F3;
+    margin: 0 14px;
+    border-bottom: 1px solid rgba(247, 246, 243, 0.5);
 }
 
 .menu-list a:hover,
 .menu-list a:focus {
     color: #323232;
+    border-radius: 25px;
+    margin: 0;
+    padding: 5px 14px 7px 14px;
     background-color: #F7F6F3;
 }
 
 .menu-list a:active {
-    /*TODO: shadow*/
+    color: #323232;
+    background-color: #F7F6F3;
+    margin: 0;
+    padding: 5px 14px 7px 14px;
+    border-radius: 25px;
+    box-shadow: inset 0 2px 1px 0 #696969;
 }
 
 .menu-list .menu--current,
 .menu-list .menu--current:hover,
 .menu-list .menu--current:focus {
     color: #F7F6F3;
+    margin: 0;
+    padding: 5px 14px 7px 14px;
     background-color: #D07058;
+    border-radius: 25px;
     border-bottom: none;
 }
 
 .user-nav-list a {
     color: #F7F6F3;
+    padding: 5px 15px;
+    border-radius: 15px;
     background-color: rgba(247, 246, 243, 0.3);
 }
 
@@ -94,6 +134,11 @@ a {
 
 .cart {
     display: none;
+}
+
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
 }
 
 .main-nav .work-hours,
@@ -145,13 +190,15 @@ a {
     height: 1px; width: 1px;
     margin: -1px; padding: 0; border: 0;
 }
-
 .btn {
     background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
     color: #F7F6F3;
+    padding: 14px 19px 13px 19px;
+    border: none;
+    border-radius: 50px;
 }
 
 .btn:hover,
@@ -199,14 +246,38 @@ a {
     background: #79513D url("../img/bg/chocolate.jpg") no-repeat left top;
 }
 
+.hits {
+    margin-bottom: 40px;
+}
+
+.catalog-list {
+    margin: 0 0 80px 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .catalog-list .catalog-item {
     list-style: none;
+    width: 265px;
+    padding: 10px 15px;
 }
 
 .catalog-list .catalog-item:hover {
     border-radius: 5px;
     background-color: rgba(248, 247, 244, 0.2);
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.catalog-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-item h3 {
+    text-align: center;
+    order: 2;
 }
 
 .catalog-item .catalog-item--title {
@@ -231,6 +302,7 @@ a {
 .catalog-item .catalog-item--price {
     font-size: 45px;
     line-height: 13px;
+    margin: -70px 0 40px 0;
 }
 
 .catalog-item--price span {
@@ -241,12 +313,36 @@ a {
     background: #E6D6B4 url("../img/bg/waffle-patters.png") repeat top left;
     color: #323232;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 25px;
+    margin-bottom: 40px;
 }
 
 .features b {
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
+    margin-bottom: 30px
+}
+
+.features-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features-list .feature-item:nth-child(2n) {
+    margin-left: 15px;
+}
+
+.features-list .feature-item:nth-child(2n + 1) {
+    margin-right: 15px;
+}
+
+.features-list .feature-item:nth-child(-n+2) {
+    margin-bottom: 30px;
 }
 
 .features-list .feature-item {
@@ -254,18 +350,33 @@ a {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    width: 550px;
+}
+
+.article--wrap {
+    display: flex;
+    margin-bottom: 40px;
 }
 
 .blog {
-    background: #F7F6F3 url("../img/bg/strawberry.jpg") no-repeat top left;
+    background: #F7F6F3 url("../img/bg/strawberry.jpg") no-repeat left 38%;
     color: #323232;
     border-radius: 15px;
+    margin-right: 15px;
+    width: 560px;
+    padding: 28px 25px;
 }
 
 .blog b {
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
+}
+
+.blog h2 {
+    margin-top: 5px;
+    margin-bottom: 60px;
+    width: 280px;
 }
 
 .blog .blog--title {
@@ -286,12 +397,15 @@ a {
 
 .subscription {
     border-radius: 15px;
-    border: 5px solid transparent;
+    border: 6px solid transparent;
     background-color: #F8F7F4;
     border-image-source: url("../img/bg/post.png");
     border-image-repeat: round;
     border-image-slice: 8;
     position: relative;
+    margin-left: 15px;
+    width: 560px;
+    padding: 40px 25px;
 }
 
 .subscription p {
@@ -299,7 +413,16 @@ a {
     font-size: 16px;
     line-height: 22px;
     color: #5A5A5A;
-    margin: 0;
+    margin: 0 0 45px;
+}
+
+.subscription input {
+    box-sizing: content-box;
+    width: 370px;
+    height: 44px;
+    border: 1px solid rgba(178, 178, 178, 0.5);
+    padding-left: 14px;
+    border-radius: 5px;
 }
 
 .subscription input::placeholder {
@@ -307,6 +430,11 @@ a {
     color: #999999;
     font-size: 16px;
     line-height: 24px;
+}
+
+.subscription form {
+    display: flex;
+    justify-content: space-between;
 }
 
 .contacts {
@@ -330,6 +458,18 @@ a {
     color: #323232;
 }
 
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.footer-social-list  {
+    width: 260px;
+    margin: 0 0 0 25px;
+    display: flex;
+}
+
 .footer-social-list li,
 .footer-info-list li {
     list-style: none;
@@ -341,7 +481,25 @@ a {
     color: transparent;
 }
 
-.footer-info-item a {
+.footer-info-list {
+    width: 560px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-info-list .footer-info-item {
+    width: 265px;
+    box-sizing: border-box;
+}
+
+.footer-info-list .footer-info-item:nth-child(2n + 1) {
+    padding-left: 130px;
+}
+
+.footer-info-item a,
+.footer-copyright a:not(.copyright--logo) {
     color: #FFFFFF;
     font-weight: 400;
     font-size: 13px;
@@ -351,7 +509,10 @@ a {
 
 .footer-info-item a:hover,
 .footer-info-item a:focus,
-.footer-info-item a:active {
+.footer-info-item a:active,
+.footer-copyright a:hover:not(.copyright--logo),
+.footer-copyright a:focus:not(.copyright--logo),
+.footer-copyright a:active:not(.copyright--logo) {
     color: #FFBC9E;
     border-bottom: 1px solid rgba(255, 188, 158, 0.5);
 }
@@ -360,12 +521,19 @@ a {
     font-weight: bold;
 }
 
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .footer-copyright p,
 .footer-copyright .footer-copyright--link {
     color: #FFFFFF;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
+    margin: 2px 0 0 0;
 }
 
 .footer-copyright .footer-copyright--link {
@@ -413,10 +581,16 @@ a {
 
 .breadcrumbs {
     list-style: none;
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+}
+.breadcrumbs li:not(:last-child) {
+    margin-right: 20px;
 }
 
-.breadcrumbs a,
-.breadcrumbs .breadcrumbs--current {
+.breadcrumbs a {
     color: #FFFFFF;
     font-weight: 400;
     font-size: 14px;
@@ -434,7 +608,11 @@ a {
     border-bottom: 1px solid rgba(255, 188, 158, 0.5);
 }
 
-.breadcrumbs .breadcrumbs--current {
+.breadcrumbs--current a,
+.breadcrumbs--current a:hover,
+.breadcrumbs--current a:focus,
+.breadcrumbs--current a:active {
+    color: #FFFFFF;
     border-bottom: none;
 }
 
@@ -445,6 +623,7 @@ a {
 
 .pagination-list {
     list-style: none;
+    padding-bottom: 30px;
 }
 
 .pagination-list a {
