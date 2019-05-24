@@ -10,7 +10,7 @@
         <header class="main-header">
             <nav class="main-nav">
                 <div class="header--wrap">
-                    <a class="main-header--logo" href="index.html">
+                    <a class="main-header--logo" href="index.html"  target="_blank">
                         <img src="img/icons/logo.svg" alt="Логотип 'Gllacy'" width="154" height="64">
                     </a>
                     <ul class="menu-list">
@@ -106,54 +106,64 @@
             <section class="filters">
                 <h2 class="visually--hidden">Фильтр товаров</h2>
                 <form action="http://echo.htmlacademy.ru" method="post">
-                    <label for="sort">Сортировка:</label>
-                    <select id="sort" name="sort">
-                        <option value="popular" selected>по популярности</option>
-                        <option value="first-cheap">сначала дорогие</option>
-                        <option value="first-expensive">сначала дорогие</option>
-                        <option value="fat">по жирности</option>
-                    </select>
+                    <div class="sort--wrap">
+                        <div class="filter--wrap">
+                            <label for="sort">Сортировка:</label>
+                            <select id="sort" name="sort">
+                                <option value="popular" selected>по популярности</option>
+                                <option value="first-cheap">сначала дорогие</option>
+                                <option value="first-expensive">сначала дорогие</option>
+                                <option value="fat">по жирности</option>
+                            </select>
+                        </div>
+                        <div class="filter--wrap">
+                            <label for="price">Цена: 100 руб. – 500 руб.</label>
+                            <div class="filter-price" id="price">
+                                <button class="price-min" type="button"></button>
+                                <button class="price-max" type="button"></button>
+                            </div>
+                        </div>
 
-                    <label for="price">Цена: 100 руб. – 500 руб.</label>
-                    <div class="filter-price" id="price">
-                        <button class="price-min" type="button"></button>
-                        <button class="price-max" type="button"></button>
+                        <div class="filter--wrap">
+                            <label for="fat">Жирность:</label>
+                            <div class="filter-fat" id="fat">
+                                <label for="percentage-0">0%</label>
+                                <input id="percentage-0" type="radio" name="fat" value="0">
+
+                                <label for="percentage-10">до 10%</label>
+                                <input id="percentage-10" type="radio" name="fat" value="10" checked>
+
+                                <label for="percentage-30">до 30%</label>
+                                <input id="percentage-30" type="radio" name="fat" value="30">
+
+                                <label for="percentage-1">выше 30%</label>
+                                <input id="percentage-1" type="radio" name="fat" value="1">
+                            </div>
+                        </div>
                     </div>
+                    <div class="sort--wrap">
+                        <div class="filter--wrap">
+                            <label for="fillers">Наполнители:</label>
+                            <div class="filter-fillers" id="fillers">
+                                <label for="chocolate">шоколадные</label>
+                                <input id="chocolate" name="chocolate" type="checkbox" checked>
 
-                    <label for="fat">Жирность:</label>
-                    <div class="filter-fat" id="fat">
-                        <label for="percentage-0">0%</label>
-                        <input id="percentage-0" type="radio" name="fat" value="0">
+                                <label for="sugar">сахарные присыпки</label>
+                                <input id="sugar" name="sugar" type="checkbox" checked>
 
-                        <label for="percentage-10">до 10%</label>
-                        <input id="percentage-10" type="radio" name="fat" value="10" checked>
+                                <label for="fruits">фрукты</label>
+                                <input id="fruits" name="fruits" type="checkbox">
 
-                        <label for="percentage-30">до 30%</label>
-                        <input id="percentage-30" type="radio" name="fat" value="30">
+                                <label for="syrups">сиропы</label>
+                                <input id="syrups" name="syrups" type="checkbox">
 
-                        <label for="percentage-1">выше 30%</label>
-                        <input id="percentage-1" type="radio" name="fat" value="1">
+                                <label for="jam">джемы</label>
+                                <input id="jam" name="jam" type="checkbox">
+                            </div>
+                        </div>
+
+                        <button class="submit" type="submit">Применить</button>
                     </div>
-
-                    <label for="fillers">Наполнители:</label>
-                    <div class="filter-fillers" id="fillers">
-                        <label for="chocolate">шоколадные</label>
-                        <input id="chocolate" name="chocolate" type="checkbox" checked>
-
-                        <label for="sugar">сахарные присыпки</label>
-                        <input id="sugar" name="sugar" type="checkbox" checked>
-
-                        <label for="fruits">фрукты</label>
-                        <input id="fruits" name="fruits" type="checkbox">
-
-                        <label for="syrups">сиропы</label>
-                        <input id="syrups" name="syrups" type="checkbox">
-
-                        <label for="jam">джемы</label>
-                        <input id="jam" name="jam" type="checkbox">
-                    </div>
-
-                    <button class="submit" type="submit">Применить</button>
                 </form>
             </section>
 
@@ -316,7 +326,7 @@
                     <li  class="footer-info-item"><a href="#">Экологические стандарты</a></li>
                 </ul>
                 <div class="footer-copyright">
-                    <a href="https://htmlacademy.ru">
+                    <a class="copyright--logo" href="https://htmlacademy.ru" target="_blank">
                         <img src="img/icons/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="108" height="38">
                     </a>
                     <p>Сделано в <a class="footer-copyright--link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>© 2019</p>
