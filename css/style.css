@@ -485,7 +485,6 @@ a {
 }
 
 .subscription input {
-    box-sizing: content-box;
     width: 370px;
     border: 1px solid rgba(178, 178, 178, 0.5);
     padding-left: 14px;
@@ -615,7 +614,7 @@ a {
 }
 
 .footer-info-item:first-child a {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .footer-copyright {
