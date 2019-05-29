@@ -14,9 +14,9 @@
                         <img src="img/icons/logo.svg" alt="Логотип 'Gllacy'" width="154" height="64">
                     </a>
                     <ul class="menu-list">
-                        <li>
-                            <a class="menu--current" href="catalog.html">Каталог</a>
-                            <section class="catalog-menu">
+                        <li id="catalog-menu">
+                            <a id="catalog-menu-btn" class="menu--current" href="catalog.html">Каталог</a>
+                            <section class="catalog-menu popup--hide">
                                 <h2 class="visually--hidden">Меню каталога</h2>
                                 <ul class="catalog-menu-list">
                                     <li><a class="catalog-menu-item catalog-menu-item-new" href="#">Новинки</a></li>
@@ -31,7 +31,7 @@
                         <li><a href="#">О Компании</a></li>
                     </ul>
                     <ul class="user-nav-list">
-                        <li class="user-nav-item user-nav-search">
+                        <li class="user-nav-item user-nav-search" id="search-btn">
                             <a class="search-link" href="#">
                                 <span>Поиск</span>
                                 <svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -50,14 +50,14 @@
                                     </g>
                                 </svg>
                             </a>
-                            <section class="search">
+                            <section class="search popup--hide" id="search-block">
                                 <h2 class="visually--hidden">Поиск</h2>
                                 <form action="http://echo.htmlacademy.ru" method="get">
                                     <input type="text" placeholder="Что ищем?" aria-label="Что ищем?">
                                 </form>
                             </section>
                         </li>
-                        <li class="user-nav-item user-nav-login">
+                        <li class="user-nav-item user-nav-login" id="login-btn">
                             <a class="login-link" href="#">
                                 <svg width="21px" height="19px" viewBox="0 0 21 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -81,7 +81,7 @@
                                 </svg>
                                 <span>Вход</span>
                             </a>
-                            <section class="login">
+                            <section id="login-block" class="login popup--hide">
                                 <h2 class="visually--hidden">Вход в личный кабинет</h2>
                                 <form action="http://echo.htmlacademy.ru" method="post">
                                     <input type="email" placeholder="Электронная почта" aria-label="Электронная почта" required>
