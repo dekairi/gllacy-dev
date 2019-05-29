@@ -273,7 +273,7 @@
                         <a class="contacts-phone" href="tel:88124502525">8 812 450-25-25</a>
                         (с 10 до 20 ежедневно)
                     </address>
-                    <a class="btn" href="#">Форма обратной связи</a>
+                    <a class="btn" href="#" id="feedback-btn">Форма обратной связи</a>
                 </section>
             </div>
         </main>
@@ -382,14 +382,15 @@
             </div>
         </footer>
         
-        <section class="modal modal-feedback">
+        <section class="modal modal-feedback popup--hide">
             <b>Мы обязательно вам ответим!</b>
+            <button class="btn-close">Закрыть</button>
             <h2 class="visually--hidden">Обратная связь</h2>
             <form action="http://echo.htmlacademy.ru" method="post">
                 <input type="text" placeholder="Как вас зовут?" aria-label="Имя" required>
                 <input type="email" placeholder="Ваша почта для ответа?" aria-label="Электронная почта" required>
                 <textarea placeholder="Напишите что-нибудь..." aria-label="Текст-обращения" required></textarea>
-                <button type="submit">Отправить</button>
+                <button class="btn" type="submit">Отправить</button>
             </form>
         </section>
 

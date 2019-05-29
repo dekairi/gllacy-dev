@@ -404,7 +404,7 @@ a.cart-link {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    margin-top: -105px;
+    margin-top: -115px;
 }
 
 .slider .slide--wrap {
@@ -958,8 +958,87 @@ a.cart-link {
     border-bottom: 1px solid rgba(255, 188, 158, 0.5);
 }
 
-.modal {
-    display: none;
+.modal-feedback {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #F8F7F4;
+    padding: 25px;
+    border-radius: 5px;
+    margin-left: -240px;
+    margin-top: -230px;
+}
+
+.modal-feedback .btn-close {
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+    background-image: url("../img/icons/close.svg");
+    width: 18px;
+    height: 17px;
+    background-color: transparent;
+    border: none;
+    top: 17px;
+    right: 18px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.modal-feedback form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-feedback input,
+.modal-feedback textarea {
+    border: 1px solid #D3D3D2;
+    width: 270px;
+    height: 47px;
+    margin: 20px 0 8px 0;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.modal-feedback textarea {
+    padding-top: 10px;
+    height: 158px;
+    width: 431px;
+    resize: none;
+    margin-bottom: 25px;
+}
+
+.modal-feedback input:hover,
+.modal-feedback textarea:hover {
+    border: 2px solid #9A9A9A;
+}
+
+.modal-feedback input:hover,
+.modal-feedback input:focus {
+    padding-left: 9px;
+}
+
+.modal-feedback textarea:hover,
+.modal-feedback textarea:focus {
+    padding: 9px 0 0 9px;
+}
+
+.modal-feedback input:focus,
+.modal-feedback textarea:focus {
+    outline: none;
+    border: 2px solid #2E88E4;
+}
+
+.modal-feedback b {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #323232;
+}
+
+.modal-feedback .btn {
+    align-self: flex-end;
+    padding: 9px 28px 12px 25px;
 }
 
 .filters {
