@@ -132,6 +132,11 @@ img {
     border-bottom: none;
 }
 
+.user-nav-list {
+    min-width: 280px;
+    justify-content: flex-end;
+}
+
 .user-nav-list a {
     color: #F7F6F3;
     padding: 5px 15px;
@@ -200,6 +205,11 @@ a.cart-link {
     border-radius: 18px;
     display: flex;
     align-items: center;
+}
+
+.user-nav-cart a.cart--full {
+    color: #323232;
+    background-color: #F7F6F3;
 }
 
 .cart-link span {
@@ -888,7 +898,12 @@ a.cart-link {
 
 .pagination-list {
     list-style: none;
-    padding-bottom: 30px;
+    padding: 0 25px 30px 0;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    border-bottom: 1px solid rgba(247, 246, 243, 0.5);
+    position: relative;
 }
 
 .pagination-list a {
@@ -897,13 +912,77 @@ a.cart-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 10px;
+    border-radius: 15px;
 }
 
-.pagination-list a:hover {
+.pagination-item.pagination-item--disabled path,
+.pagination-item.pagination-item--disabled:hover path,
+.pagination-item.pagination-item--disabled:focus path,
+.pagination-item.pagination-item--disabled:active path {
+    fill: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-item.pagination-item--back:hover,
+.pagination-item.pagination-item--next:hover,
+.pagination-item.pagination-item--back:focus,
+.pagination-item.pagination-item--next:focus {
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+    background-color: transparent;
+}
+
+.pagination-item.pagination-item--back:active a,
+.pagination-item.pagination-item--next:active a {
+    background-color: transparent;
+}
+
+.pagination-item.pagination-item--disabled,
+.pagination-item.pagination-item--disabled:hover,
+.pagination-item.pagination-item--disabled:focus,
+.pagination-item.pagination-item--disabled:active {
+    background-color: transparent;
+}
+
+.pagination-item--back a,
+.pagination-item--next a {
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+    padding-top: 7px;
+}
+
+.pagination-item:hover,
+.pagination-item:focus {
     background-color: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    border-radius: 15px;
 }
 
-.pagination-list .pagination-item--current {
+.pagination-item--back:hover path,
+.pagination-item--back:active path,
+.pagination-item--next:hover path,
+.pagination-item--next:focus path {
+     fill: #FFFFFF;
+}
+
+.pagination-item--next:active path,
+.pagination-item--next:active path {
+    fill: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-item:active a {
+    color: #323232;
+    background-color: #FFFFFF;
+}
+
+.pagination-item--current a,
+.pagination-item--current:hover,
+.pagination-item--current:focus,
+.pagination-item--current:active {
     color: #323232;
     background-color: #FFFFFF;
     font-weight: 500;
