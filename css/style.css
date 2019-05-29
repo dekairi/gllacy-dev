@@ -160,8 +160,30 @@ li.catalog-menu-item--current a.catalog-menu-item:hover {
     font-size: 14px;
 }
 
+.user-nav-search {
+    position: relative;
+}
+
 .search {
-    display: none;
+    /*display: none;*/
+    position: absolute;
+    top: 40px;
+    right: 0;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.search form {
+    background-color: #F8F7F4;
+    border-radius: 5px;
+}
+
+.search input {
+    border: 1px solid #D3D3D2;
+    width: 314px;
+    height: 47px;
+    margin: 20px 15px;
+    border-radius: 5px;
+    padding-left: 10px;
 }
 
 .login {
