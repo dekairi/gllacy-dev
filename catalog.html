@@ -32,7 +32,7 @@
                     </ul>
                     <ul class="user-nav-list">
                         <li class="user-nav-item user-nav-search" id="search-btn">
-                            <a class="search-link" href="#">
+                            <a class="user-nav-link search-link" href="#">
                                 <span>Поиск</span>
                                 <svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -58,7 +58,7 @@
                             </section>
                         </li>
                         <li class="user-nav-item user-nav-login" id="login-btn">
-                            <a class="login-link" href="#">
+                            <a class="user-nav-link login-link" href="#">
                                 <svg width="21px" height="19px" viewBox="0 0 21 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                         <g transform="translate(-684.000000, -666.000000)" fill="#FFFFFF" id="Шапка.Поиск-Вход-Корзина">
@@ -92,8 +92,8 @@
                                 <a href="#">Новая регистрация</a>
                             </section>
                         </li>
-                        <li class="user-nav-item user-nav-cart">
-                            <a class="cart-link cart--full">
+                        <li class="user-nav-item user-nav-cart" id="cart-btn">
+                            <a class="user-nav-link cart-link cart--full">
                                 <svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                         <g transform="translate(-1308.000000, -718.000000)" id="Шапка.Поиск-Вход-Корзина">
@@ -117,34 +117,36 @@
                                     </g>
                                 </svg>
                                 <span>2 товара</span>
-                                <section class="cart">
-                                    <h2 class="visually--hidden">Моя корзина</h2>
-                                    <form action="http://echo.htmlacademy.ru" method="post">
-                                        <ul class="cart-list">
-                                            <li class="cart-item">
-                                                <button class="remove-btn" type="button">Удалить позицию</button>
-                                                <a href="#">
-                                                    <img src="img/content/product-1-small.jpg" alt="Промбир с апельсиновым джемом" width="33" height="33">
-                                                    <p>Промбир с апельсиновым джемом</p>
-                                                </a>
-                                                <p class="count-price">1,5 кг х <span>200 руб.</span></p>
-                                                <p class="price">300 руб.</p>
-                                            </li>
-                                            <li class="cart-item">
-                                                <button class="remove-btn" type="button">Удалить позицию</button>
-                                                <a href="#">
-                                                    <img src="img/content/product-3-small.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
-                                                    <p>Клубничный пломбир с присыпкой из белого шоколада</p>
-                                                </a>
-                                                <p class="count-price">1,5 кг х <span>300 руб.</span></p>
-                                                <p class="price">450 руб.</p>
-                                            </li>
-                                        </ul>
-                                        <b>Итого: 750 руб.</b>
-                                        <button type="submit">Оформить заказ</button>
-                                    </form>
-                                </section>
                             </a>
+                            <section class="cart popup--hide" id="cart-block">
+                                <h2 class="visually--hidden">Моя корзина</h2>
+                                <form action="http://echo.htmlacademy.ru" method="post">
+                                    <ul class="cart-list">
+                                        <li class="cart-item">
+                                            <button class="remove-btn" type="button">Удалить позицию</button>
+                                            <a href="#">
+                                                <img src="img/content/product-1-small.jpg" alt="Промбир с апельсиновым джемом" width="33" height="33">
+                                                <p class="title">Промбир с апельсиновым джемом</p>
+                                            </a>
+                                            <p class="count-price">1,5 кг х <span>200 руб.</span></p>
+                                            <p class="price">300 руб.</p>
+                                        </li>
+                                        <li class="cart-item">
+                                            <button class="remove-btn" type="button">Удалить позицию</button>
+                                            <a href="#">
+                                                <img src="img/content/product-3-small.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
+                                                <p class="title">Клубничный пломбир с присыпкой из белого шоколада</p>
+                                            </a>
+                                            <p class="count-price">1,5 кг х <span>300 руб.</span></p>
+                                            <p class="price">450 руб.</p>
+                                        </li>
+                                    </ul>
+                                    <div class="sum--wrap">
+                                        <b>Итого: 750 руб.</b>
+                                        <button class="btn" type="submit">Оформить заказ</button>
+                                    </div>
+                                </form>
+                            </section>
                         </li>
                     </ul>
                 </div>

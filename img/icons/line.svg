@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="1px" viewBox="0 0 128 1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Разделитель</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect x="8" y="77" width="128" height="1" id="rect-1"></rect>
+    </defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.2">
+        <g id="Index" transform="translate(-190.000000, -98.000000)">
+            <g id="Главное-меню" transform="translate(182.000000, 21.000000)">
+                <g id="Разделитель">
+                    <image x="8" y="77" width="128" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAAABCAYAAAAW0qa2AAABc2lDQ1BJQ0MgUHJvZmlsZQAAKJF9kMsrRHEUxz8zTOTRLFASdcuwMvIosWMsJjULDcprc+fOS83cud25QrbKxkJZiI3Xwj8gtspaKSIlG/8BsdF0nd8MjUc5dTqfvr9zzu+cA96AblmZyh7Imo4dDYe06ZlZreoJH2000AS6kbdGxscjiH3Fn/Z2i0fF66Dq9ff9X6uNJ/IGeKqFBwzLdoSHhduXHEtxXLjRlqGElxWnSryhOFbi/WLOZHRU+ERYM9K61HluhLuMtJ0Fr/orEPuWk/rG2cyi8TmP2qQuYU5NSGwRbyVPlDAhNGIsskAGh6BEE5zEsqOKRnPWir2QSjvaiFwgoY2ZRneX1tfTOwTqnr/vVNZyMvvgK1RslrXYNpytQ/N9WQvsgX8NTi8s3daLUoW4N5mE52Oon4GGK6iZyyf7+0qb1IXA9+i6Lx1QtQWFTdd9P3DdwqEUP8C5WbrNZy+O7mByFSKXsLMLndLbP/8BbS9nN6/ZhcUAAAATSURBVCgVYzQ1Nf3PMApGbAgAADyTAaBpVJsZAAAAAElFTkSuQmCC"></image>
+                    <use fill-opacity="0" fill="#000000" fill-rule="evenodd" xlink:href="#rect-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
