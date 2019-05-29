@@ -405,7 +405,7 @@ a.cart-link {
     margin-left: -10px;
 }
 
-.catalog-list .catalog-item:last-child {
+.catalog-list .catalog-item:nth-child(4n) {
     margin-right: -10px;
 }
 
