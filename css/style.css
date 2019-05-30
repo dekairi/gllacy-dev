@@ -1402,6 +1402,7 @@ a.cart-link {
     font-size: 14px;
     line-height: 16px;
     border-bottom: 1px solid rgba(247, 246, 243, 0.5);
+    position: relative;
 }
 
 .breadcrumbs a:hover,
@@ -1420,6 +1421,14 @@ a.cart-link {
 .breadcrumbs--current a:active {
     color: #FFFFFF;
     border-bottom: none;
+}
+
+.breadcrumbs-item:not(:last-child) a::after {
+    content: "»";
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    color: #FFFFFF;
 }
 
 .container h1 {
