@@ -649,7 +649,7 @@ a.cart-link {
 }
 
 .slider-dot-item--current button,
-.slider-dot-item button:active {
+.slider-dot-item:not(.slider-dot-item--current) button:active {
     background-color: #FFFFFF;
 }
 
