@@ -1399,7 +1399,7 @@ a.cart-link {
     padding: 0 25px 30px 0;
     display: flex;
     justify-content: flex-end;
-    margin: 0;
+    margin: 80px 0 0 0;
     border-bottom: 1px solid rgba(247, 246, 243, 0.5);
     position: relative;
 }
