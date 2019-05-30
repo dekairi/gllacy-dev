@@ -976,7 +976,7 @@ a.cart-link {
 
 .contacts {
     position: absolute;
-    top: 60px;
+    top: 50px;
     right: 0;
     width: 300px;
     box-sizing: border-box;
@@ -986,14 +986,7 @@ a.cart-link {
     padding: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.contacts address {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    font-style: normal;
+    align-items: flex-start;
 }
 
 .contacts .contacts-phone,
@@ -1002,6 +995,35 @@ a.cart-link {
     font-size: 18px;
     line-height: 24px;
     color: #323232;
+}
+
+.contacts span.contacts-address {
+    margin-bottom: 25px;
+}
+
+.contacts a.contacts-phone {
+    margin: 4px 0;
+}
+
+.contacts p.contacts-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts p:first-of-type {
+    margin-bottom: 8px;
+    width: 150px;
+}
+
+.contacts p:last-of-type {
+    margin-bottom: 30px;
+}
+
+.contacts .btn {
+    align-self: stretch;
 }
 
 .main-footer {
