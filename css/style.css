@@ -1254,6 +1254,49 @@ a.cart-link {
     flex-direction: column;
 }
 
+.filters select.sort-by,
+.filters .filter-fat,
+.filters .filter-fillers {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    -webkit-appearance: none;
+    padding: 10.5px 40px 10.5px 15px;
+    border-radius: 25px;
+}
+
+.filters select.sort-by:hover,
+.filters select.sort-by:focus,
+.filters select.sort-by:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #323232;
+    cursor: pointer;
+}
+
+.filters .filter-fillers {
+    padding: 10.5px 20px 10.5px 50px;
+}
+
+.filter-fillers input,
+.filter-fat input {
+    visibility: hidden;
+}
+
+.filter-fat label:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+.filter-fillers label:not(:last-of-type) {
+    margin-right: 25px;
+}
+
+.filters .filter-fat {
+    padding: 10.5px 20px 10.5px 45px;
+}
+
 .sort--wrap {
     display: flex;
     align-items: flex-end;
