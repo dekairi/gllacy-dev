@@ -1,12 +1,14 @@
 window.addEventListener('DOMContentLoaded', function () {
-    let btnFeedback = document.querySelector('#feedback-btn');
-    let elFeedback = document.querySelector('#feedback');
-    let btnCloseFeedback = document.querySelector("#btn-close-feedback");
+    let btnFeedback = document.getElementById('feedback-btn');
+    let elFeedback = document.getElementById('feedback');
+    let btnCloseFeedback = document.getElementById("btn-close-feedback");
+    let inputFeedbackName = document.getElementById('feedback-name');
 
     btnFeedback.addEventListener('click', function (event) {
         event.preventDefault();
         elFeedback.classList.add('modal--show');
         elFeedback.classList.remove('modal--hide');
+        inputFeedbackName.focus();
     });
 
     btnCloseFeedback.addEventListener('click', function () {
