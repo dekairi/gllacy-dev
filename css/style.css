@@ -1015,7 +1015,13 @@ a.cart-link {
     position: relative;
 }
 
+.interactive-map {
+    margin-right: -30px;
+    height: 430px;
+}
+
 .map::after {
+    display: none;
     content: "";
     width: 80px;
     height: 140px;
@@ -1039,6 +1045,7 @@ a.cart-link {
 
 .map-image {
     max-width: 1200px;
+    display: none;
 }
 
 .contacts {
