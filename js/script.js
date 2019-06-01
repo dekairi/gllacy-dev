@@ -1,8 +1,10 @@
 window.addEventListener('DOMContentLoaded', function () {
+
+
     let btnFeedback = document.getElementById('feedback-btn');
     let elFeedback = document.getElementById('feedback');
     let btnCloseFeedback = document.getElementById("btn-close-feedback");
-    let inputFeedbackName = document.getElementById('feedback-name');
+    let inputFeedbackName = document.querySelectorAll('.modal-feedback input')[0];
 
     btnFeedback.addEventListener('click', function (event) {
         event.preventDefault();
