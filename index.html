@@ -277,7 +277,7 @@
                     <p class="contacts-text">Для заказов по телефону:</p>
                     <a class="contacts-phone" href="tel:88124502525">8 812 450-25-25</a>
                     <p class="contacts-text">(с 10 до 20 ежедневно)</p>
-                    <a class="btn" href="#">Форма обратной связи</a>
+                    <a id="feedback-btn" class="btn" href="#">Форма обратной связи</a>
                 </section>
             </div>
         </main>
@@ -386,9 +386,9 @@
             </div>
         </footer>
         
-        <section class="modal modal-feedback">
+        <section id="feedback" class="modal modal-feedback modal--hide">
             <b>Мы обязательно вам ответим!</b>
-            <button class="btn-close">Закрыть</button>
+            <button id="btn-close-feedback" class="btn-close">Закрыть</button>
             <h2 class="visually--hidden">Обратная связь</h2>
             <form action="http://echo.htmlacademy.ru" method="post">
                 <input type="text" placeholder="Как вас зовут?" aria-label="Имя" required>
@@ -398,6 +398,6 @@
             </form>
         </section>
 
-        <script src="js/index.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

@@ -380,7 +380,7 @@ li.catalog-menu-item--current a.catalog-menu-item:hover {
 
 .user-nav-list a.search-link {
     display: block;
-    padding: 6.5px 8px;
+    padding: 6.5px 7px;
     border-radius: 20px;
 }
 
@@ -443,6 +443,7 @@ a.cart-link {
 
 .user-nav-cart {
     position: relative;
+    cursor: pointer;
 }
 
 .user-nav-cart:hover .cart--wrap {
@@ -809,6 +810,21 @@ a.cart-link {
 
 .catalog-item--price span {
     font-size: 30px;
+}
+
+.catalog-item--hit {
+    position: relative;
+}
+
+.catalog-item--hit::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icons/hit.svg");
+    background-repeat: no-repeat;
+    width: 61px;
+    height: 61px;
+    left: 10px;
+    top: 30px;
 }
 
 .features {
@@ -1193,8 +1209,15 @@ a.cart-link {
     border-bottom: 1px solid rgba(255, 188, 158, 0.5);
 }
 
-.modal-feedback {
+.modal--show {
+    display: block;
+}
+
+.modal--hide {
     display: none;
+}
+
+.modal-feedback {
     position: fixed;
     top: 50%;
     left: 50%;
