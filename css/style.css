@@ -982,6 +982,17 @@ a.cart-link {
     line-height: 24px;
 }
 
+.subscription input:hover {
+    border: 2px solid #9A9A9A;
+    padding: 1px 0 0 13px;
+}
+
+.subscription input:focus {
+    outline: none;
+    border: 2px solid #2E88E4;
+    padding: 1px 0 0 13px;
+}
+
 .subscription form {
     display: flex;
     justify-content: space-between;
