@@ -20,4 +20,35 @@ window.addEventListener('DOMContentLoaded', function () {
             elFeedback.classList.add('modal--hide');
         }
     });
+
+    // slide-show
+    let slides = document.querySelectorAll('.slide');
+    let dots = document.querySelectorAll('.slider-dot-item');
+    let backgrounds = {
+        0: '#849D8F',
+        1: '#8996A6',
+        2: '#9D8B84'
+    };
+
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].addEventListener('click', function () {
+            removeActiveStatusFromDots();
+            dots[i].classList.add('slider-dot-item--current');
+            removeActiveStatusFromSlides();
+            slides[i].classList.add('slide--active');
+            document.body.style.backgroundColor = backgrounds[i];
+        });
+    }
+
+    function removeActiveStatusFromDots() {
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].classList.remove('slider-dot-item--current');
+        }
+    }
+
+    function removeActiveStatusFromSlides() {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.remove('slide--active');
+        }
+    }
 });

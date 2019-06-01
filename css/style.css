@@ -576,10 +576,14 @@ a.cart-link {
 .slide-2,
 .slide-3 {
     min-height: 880px;
-    display: flex;
+    display: none;
     flex-direction: column-reverse;
     justify-content: center;
-    margin-top: -115px;
+    margin-top: -125px;
+}
+
+.slider .slide.slide--active {
+    display: flex;
 }
 
 .slider .slide--wrap {
