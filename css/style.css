@@ -765,20 +765,43 @@ a.cart-link {
     margin-right: -10px;
 }
 
-.catalog-list .catalog-item:hover {
+.catalog-item:hover .btn--wrap {
+    display: flex;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.catalog-item:hover img,
+.catalog-item:hover h3 {
+    z-index: 2;
+}
+
+.btn--wrap {
+    display: none;
+    position: absolute;
+    left: -5px;
+    flex-direction: column-reverse;
+    width: 296px;
+    height: 408px;
     border-radius: 5px;
     background-color: rgba(248, 247, 244, 0.2);
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
+.catalog-item:hover .btn-quick-view {
+    display: block;
+    align-self: center;
+    margin: 10px 0 15px 0;
+}
+
 .catalog-item {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .catalog-item h3 {
     text-align: center;
-    order: 2;
     margin: 0;
 }
 
@@ -825,6 +848,10 @@ a.cart-link {
     height: 61px;
     left: 10px;
     top: 30px;
+}
+
+.btn-quick-view {
+    display: none;
 }
 
 .features {
