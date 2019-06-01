@@ -948,15 +948,23 @@ a.cart-link {
 
 .subscription {
     border-radius: 15px;
-    border: 6px solid transparent;
     background-color: #F8F7F4;
-    border-image-source: url("../img/bg/post.png");
-    border-image-repeat: round;
-    border-image-slice: 8;
+    background-image: url("../img/bg/post.png");
+    background-repeat: no-repeat;
     position: relative;
     width: 560px;
+    height: 220px;
+}
+
+.subscription--wrap {
+    position: absolute;
+    width: 551px;
+    height: 212px;
+    background-color: #F8F7F4;
+    border-radius: 15px;
     padding: 29px 20px;
-    box-sizing: border-box;
+    top: 4px;
+    left: 4px;
 }
 
 .subscription p {
