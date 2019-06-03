@@ -3,17 +3,20 @@ window.addEventListener('DOMContentLoaded', function () {
     let elFeedback = document.getElementById('feedback');
     let btnCloseFeedback = document.getElementById("btn-close-feedback");
     let inputFeedbackName = document.querySelectorAll('.modal-feedback input')[0];
+    let elOverlay = document.getElementById('overlay');
 
     btnFeedback.addEventListener('click', function (event) {
         event.preventDefault();
         elFeedback.classList.add('modal--show');
         elFeedback.classList.remove('modal--hide');
+        elOverlay.classList.add('overlay--show');
         inputFeedbackName.focus();
     });
 
     btnCloseFeedback.addEventListener('click', function () {
         elFeedback.classList.remove('modal--show');
         elFeedback.classList.add('modal--hide');
+        elOverlay.classList.remove('overlay--show');
     });
 
     document.addEventListener('keydown', function (event) {
