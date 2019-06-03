@@ -488,13 +488,30 @@ a.cart-link {
 .cart .remove-btn {
     background-color: transparent;
     border: none;
-    background-image: url("../img/icons/close-small.svg");
     background-repeat: no-repeat;
     width: 11px;
     height: 11px;
     line-height: 0;
     font-size: 0;
     color: transparent;
+}
+
+.cart .remove-btn::after,
+.cart .remove-btn::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 1px;
+    background-color: #323232;
+    left: 12px;
+}
+
+.cart .remove-btn::after {
+    transform: rotate(45deg);
+}
+
+.cart .remove-btn::before {
+    transform: rotate(-45deg);
 }
 
 .cart a {
@@ -1292,7 +1309,6 @@ a.cart-link {
     line-height: 0;
     font-size: 0;
     color: transparent;
-    background-image: url("../img/icons/close.svg");
     background-repeat: no-repeat;
     width: 18px;
     height: 17px;
@@ -1302,6 +1318,24 @@ a.cart-link {
     right: 18px;
     position: absolute;
     cursor: pointer;
+}
+
+.modal-feedback .btn-close::after,
+.modal-feedback .btn-close::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 2px;
+    background-color: #323232;
+    left: -2px;
+}
+
+.modal-feedback .btn-close::after {
+    transform: rotate(45deg);
+}
+
+.modal-feedback .btn-close::before {
+    transform: rotate(-45deg);
 }
 
 .modal-feedback form {
