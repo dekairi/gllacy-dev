@@ -330,6 +330,10 @@ li.catalog-menu-item--current a.catalog-menu-item:hover {
     border-bottom: 1px solid rgba(247, 246, 243, 0.5);
 }
 
+.menu-list .menu-link:first-child {
+    margin-left: 15px;
+}
+
 .menu-list .menu-link[href]:hover,
 .menu-list .menu-link[href]:focus {
     color: #323232;
@@ -376,7 +380,7 @@ li.catalog-menu-item--current a.catalog-menu-item:hover {
 }
 
 .user-nav-list li:not(:first-child) {
-    margin-left: 7px;
+    margin-left: 13px;
 }
 
 .user-nav-list a.search-link {
@@ -587,7 +591,7 @@ a.cart-link {
 
 .slider {
     padding-bottom: 39px;
-    margin-bottom: 25px;
+    margin-bottom: 33px;
     min-height: 800px;
     position: relative;
 }
@@ -629,11 +633,12 @@ a.cart-link {
 }
 
 .slider p {
-    margin: 100px 0 30px 0;
+    margin: 120px 0 30px 0;
 }
 
 .slider .slide-1 {
     background: url("../img/bg/slider-1.png") no-repeat center center;
+    margin-top: -115px;
 }
 .slider .slide-2 {
     background: url("../img/bg/slider-2.png") no-repeat center center;
@@ -657,14 +662,14 @@ a.cart-link {
     position: absolute;
     padding: 0;
     display: flex;
-    bottom: 300px;
+    bottom: 329px;
 }
 
 .slider-dot-item button {
     background-color: transparent;
     border: 2px solid #FFFFFF;
-    width: 23px;
-    height: 23px;
+    width: 21px;
+    height: 21px;
     border-radius: 15px;
 }
 
@@ -680,7 +685,7 @@ a.cart-link {
 }
 
 .slider-dots-list li:not(:last-child) {
-    margin-right: 5px;
+    margin-right: 7px;
 }
 
 .visually--hidden:not(:focus):not(:active),
@@ -776,7 +781,7 @@ input[type="radio"].visually--hidden {
 }
 
 .hits {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
 }
 
 .catalog-list {
@@ -883,7 +888,7 @@ input[type="radio"].visually--hidden {
     width: 61px;
     height: 61px;
     left: 10px;
-    top: 30px;
+    top: 28px;
 }
 
 .btn-quick-view {
@@ -1113,14 +1118,14 @@ input[type="radio"].visually--hidden {
 
 .contacts {
     position: absolute;
-    top: 50px;
+    top: 60px;
     right: 0;
     width: 300px;
     box-sizing: border-box;
     color: #323232;
     background-color: #FFFFFF;
     border-radius: 15px;
-    padding: 30px;
+    padding: 30px 25px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1135,7 +1140,7 @@ input[type="radio"].visually--hidden {
 }
 
 .contacts span.contacts-address {
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 }
 
 .contacts a.contacts-phone {
@@ -1151,12 +1156,12 @@ input[type="radio"].visually--hidden {
 }
 
 .contacts p:first-of-type {
-    margin-bottom: 8px;
+    margin-bottom: 0;
     width: 150px;
 }
 
 .contacts p:last-of-type {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .contacts .btn {
