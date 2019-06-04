@@ -1784,6 +1784,13 @@ input[type="radio"].visually--hidden {
     margin-bottom: 15px;
 }
 
+.sort--wrap:first-child {
+    margin-left: 15px;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+
 .sort-by--wrap::after {
     border: 10px solid #FFFFFF;
     border-right-width: 5.5px;
@@ -1908,6 +1915,11 @@ input[type="radio"].visually--hidden {
     line-height: 21px;
 }
 
+.label {
+    display: inline-block;
+    padding: 0 0 5px 13px;
+}
+
 .filters .submit {
     font-weight: 500;
     font-size: 14px;
@@ -1917,6 +1929,7 @@ input[type="radio"].visually--hidden {
     border: 2px solid #FFFFFF;
     padding: 8px 33px;
     border-radius: 50px;
+    margin-bottom: 6px;
 }
 
 .filters .submit:hover,

@@ -62,7 +62,7 @@
                         <li class="user-nav-item user-nav-login">
                             <a class="user-nav-link login-link" href="#">
                                 <svg width="21px" height="19px" viewBox="0 0 21 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                         <g transform="translate(-684.000000, -666.000000)" fill="#FFFFFF">
                                             <g transform="translate(49.000000, 658.000000)">
                                                 <g>
@@ -101,7 +101,7 @@
                         <li class="user-nav-item user-nav-cart">
                             <a class="user-nav-link cart-link cart--full">
                                 <svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                         <g transform="translate(-1308.000000, -718.000000)">
                                             <g transform="translate(49.000000, 658.000000)">
                                                 <g>
@@ -192,73 +192,79 @@
                             </div>
                         </div>
                         <div class="filter--wrap">
-                            <label for="price">Цена: 100 руб. – 500 руб.</label>
-                            <div class="filter-price" id="price">
-                                <button class="price-min" type="button">От</button>
-                                <button class="price-max" type="button">До</button>
-                            </div>
+                            <label>
+                                <span class="label">Цена: 100 руб. – 500 руб.</span>
+                                <div class="filter-price">
+                                    <button class="price-min" type="button">От</button>
+                                    <button class="price-max" type="button">До</button>
+                                </div>
+                            </label>
                         </div>
 
                         <div class="filter--wrap">
-                            <label for="fat">Жирность:</label>
-                            <div class="filter-fat" id="fat">
-                                <label class="radio">
-                                    <input class="visually--hidden" type="radio" name="fat" value="0">
-                                    <span class="radio-indicator"></span>
-                                    0%
-                                </label>
+                            <label>
+                                <span class="label">Жирность:</span>
+                                <div class="filter-fat">
+                                    <label class="radio">
+                                        <input class="visually--hidden" type="radio" name="fat" value="0">
+                                        <span class="radio-indicator"></span>
+                                        0%
+                                    </label>
 
-                                <label class="radio">
-                                    <input class="visually--hidden" type="radio" name="fat" value="10" checked>
-                                    <span class="radio-indicator"></span>
-                                    до 10%
-                                </label>
+                                    <label class="radio">
+                                        <input class="visually--hidden" type="radio" name="fat" value="10" checked>
+                                        <span class="radio-indicator"></span>
+                                        до 10%
+                                    </label>
 
-                                <label class="radio">
-                                    <input class="visually--hidden" type="radio" name="fat" value="30">
-                                    <span class="radio-indicator"></span>
-                                    до 30%
-                                </label>
+                                    <label class="radio">
+                                        <input class="visually--hidden" type="radio" name="fat" value="30">
+                                        <span class="radio-indicator"></span>
+                                        до 30%
+                                    </label>
 
-                                <label class="radio">
-                                    <input class="visually--hidden" type="radio" name="fat" value="1">
-                                    <span class="radio-indicator"></span>
-                                    выше 30%
-                                </label>
-                                <input id="percentage-1" type="radio" name="fat" value="1">
-                            </div>
+                                    <label class="radio">
+                                        <input class="visually--hidden" type="radio" name="fat" value="1">
+                                        <span class="radio-indicator"></span>
+                                        выше 30%
+                                    </label>
+                                    <input id="percentage-1" type="radio" name="fat" value="1">
+                                </div>
+                            </label>
                         </div>
                     </div>
                     <div class="sort--wrap">
                         <div class="filter--wrap">
-                            <label for="fillers">Наполнители:</label>
-                            <div class="filter-fillers" id="fillers">
-                                <label class="checkbox">
-                                    <input class="visually--hidden" type="checkbox" name="chocolate" checked>
-                                    <span class="checkbox-indicator"></span>
-                                    шоколадные
-                                </label>
-                                <label class="checkbox">
-                                    <input class="visually--hidden" type="checkbox" name="sugar-topping" checked>
-                                    <span class="checkbox-indicator"></span>
-                                    сахарные присыпки
-                                </label>
-                                <label class="checkbox">
-                                    <input class="visually--hidden" type="checkbox" name="fruits">
-                                    <span class="checkbox-indicator"></span>
-                                    фрукты
-                                </label>
-                                <label class="checkbox">
-                                    <input class="visually--hidden" type="checkbox" name="syrup">
-                                    <span class="checkbox-indicator"></span>
-                                    сиропы
-                                </label>
-                                <label class="checkbox">
-                                    <input class="visually--hidden" type="checkbox" name="jam">
-                                    <span class="checkbox-indicator"></span>
-                                    джемы
-                                </label>
-                            </div>
+                            <label>
+                                <span class="label">Наполнители:</span>
+                                <div class="filter-fillers">
+                                    <label class="checkbox">
+                                        <input class="visually--hidden" type="checkbox" name="chocolate" checked>
+                                        <span class="checkbox-indicator"></span>
+                                        шоколадные
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="visually--hidden" type="checkbox" name="sugar-topping" checked>
+                                        <span class="checkbox-indicator"></span>
+                                        сахарные присыпки
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="visually--hidden" type="checkbox" name="fruits">
+                                        <span class="checkbox-indicator"></span>
+                                        фрукты
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="visually--hidden" type="checkbox" name="syrup">
+                                        <span class="checkbox-indicator"></span>
+                                        сиропы
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="visually--hidden" type="checkbox" name="jam">
+                                        <span class="checkbox-indicator"></span>
+                                        джемы
+                                    </label>
+                                </div>
+                            </label>
                         </div>
 
                         <button class="submit" type="submit">Применить</button>
@@ -447,7 +453,7 @@
                                     <g transform="translate(-982.000000, -1493.000000)" fill="#C1C6CE" fill-rule="nonzero">
                                         <g transform="translate(982.000000, 1485.000000)">
                                             <g transform="translate(4.000000, 14.000000) rotate(-180.000000) translate(-4.000000, -14.000000) translate(0.000000, 7.000000)">
-                                                <path d="M7.237,6.642 L1.729,1.133 C1.53128206,0.93528206 1.21071794,0.93528206 1.013,1.133 C0.81528206,1.33071794 0.81528206,1.65128206 1.013,1.849 L6.163,7 L1.012,12.15 C0.826482288,12.349731 0.832102872,12.6604048 1.02472372,12.8532947 C1.21734457,13.0461846 1.52801027,13.0522388 1.728,12.867 L7.237,7.358 C7.3325122,7.26335321 7.38624375,7.1344641 7.38624375,7 C7.38624375,6.8655359 7.3325122,6.73664679 7.237,6.642 Z" id="Shape"></path>
+                                                <path d="M7.237,6.642 L1.729,1.133 C1.53128206,0.93528206 1.21071794,0.93528206 1.013,1.133 C0.81528206,1.33071794 0.81528206,1.65128206 1.013,1.849 L6.163,7 L1.012,12.15 C0.826482288,12.349731 0.832102872,12.6604048 1.02472372,12.8532947 C1.21734457,13.0461846 1.52801027,13.0522388 1.728,12.867 L7.237,7.358 C7.3325122,7.26335321 7.38624375,7.1344641 7.38624375,7 C7.38624375,6.8655359 7.3325122,6.73664679 7.237,6.642 Z"></path>
                                             </g>
                                         </g>
                                     </g>
@@ -468,7 +474,7 @@
                                     <g transform="translate(-1164.000000, -1493.000000)" fill="#C1C6CE" fill-rule="nonzero">
                                         <g transform="translate(982.000000, 1485.000000)">
                                             <g transform="translate(182.000000, 7.000000)">
-                                                <path d="M7.237,6.642 L1.729,1.133 C1.53128206,0.93528206 1.21071794,0.93528206 1.013,1.133 C0.81528206,1.33071794 0.81528206,1.65128206 1.013,1.849 L6.163,7 L1.012,12.15 C0.826482288,12.349731 0.832102872,12.6604048 1.02472372,12.8532947 C1.21734457,13.0461846 1.52801027,13.0522388 1.728,12.867 L7.237,7.358 C7.3325122,7.26335321 7.38624375,7.1344641 7.38624375,7 C7.38624375,6.8655359 7.3325122,6.73664679 7.237,6.642 Z" id="Shape"></path>
+                                                <path d="M7.237,6.642 L1.729,1.133 C1.53128206,0.93528206 1.21071794,0.93528206 1.013,1.133 C0.81528206,1.33071794 0.81528206,1.65128206 1.013,1.849 L6.163,7 L1.012,12.15 C0.826482288,12.349731 0.832102872,12.6604048 1.02472372,12.8532947 C1.21734457,13.0461846 1.52801027,13.0522388 1.728,12.867 L7.237,7.358 C7.3325122,7.26335321 7.38624375,7.1344641 7.38624375,7 C7.38624375,6.8655359 7.3325122,6.73664679 7.237,6.642 Z"></path>
                                             </g>
                                         </g>
                                     </g>
@@ -550,7 +556,7 @@
                         <a class="btn-social-item btn-social--vk" href="#"></a>
                         <span>VK</span>
                         <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.8">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.8">
                                 <g transform="translate(-178.000000, -2352.000000)" fill="#FFFFFF">
                                     <g transform="translate(26.000000, 2310.000000)">
                                         <g transform="translate(0.000000, 38.000000)">
