@@ -829,7 +829,8 @@ input[type="radio"].visually--hidden {
 
 .btn:hover,
 .btn:focus {
-    background: rgba(255, 255, 255, 0.2) linear-gradient(0deg, #E74A35 0%, #F26843 100%);
+    background-color: rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(0deg, #EF7A63 0%, #EC715F 100%);
     box-shadow: 0 2px 2px 0 #AC1000;
     color: #FFFFFF;
 }
