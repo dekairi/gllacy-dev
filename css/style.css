@@ -702,7 +702,7 @@ a.cart-link {
 }
 
 .slider .slide--wrap {
-    width: 670px;
+    width: 680px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -833,7 +833,11 @@ input[type="radio"].visually--hidden {
 .btn:hover,
 .btn:focus {
     background-color: rgba(255, 255, 255, 0.2);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#EF7A63), to(#EC705E));
+    background-image: -webkit-linear-gradient(bottom, #EF7A63 0%, #EC705E 100%);
+    background-image: -o-linear-gradient(bottom, #EF7A63 0%, #EC705E 100%);
     background-image: linear-gradient(0deg, #EF7A63 0%, #EC705E 100%);
+    -webkit-box-shadow: 0 2px 2px 0 #AC1000;
     box-shadow: 0 2px 2px 0 #AC1000;
     color: #FFFFFF;
 }
@@ -1201,6 +1205,7 @@ input[type="radio"].visually--hidden {
 .subscription input {
     width: 370px;
     border: 1px solid rgba(178, 178, 178, 0.5);
+    padding-top: 2px;
     padding-left: 14px;
     border-radius: 5px;
     margin-right: 10px;
