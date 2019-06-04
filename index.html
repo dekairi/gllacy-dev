@@ -413,24 +413,35 @@
         </section>
         <div id="overlay" class="overlay"></div>
 
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=<cd34823f-0b8b-4aba-be82-72027d93120e>&lang=en_US" type="text/javascript"></script>>
         <script>
-            function initMap() {
-                let academy = {lat: 59.938585, lng: 30.324508};
-                let map = new google.maps.Map(
-                    document.getElementById('map'), {
+            ymaps.ready(init);
+            function init(){
+                let myMap = new ymaps.Map('map', {
+                        center: [59.939354, 30.328739],
                         zoom: 16,
-                        center: {lat: 59.939354, lng: 30.328739},
-                        disableDefaultUI: true
+                        controls: []
+                    }, {
+                        searchControlProvider: 'yandex#search'
+                    }),
+
+                    MyIconContentLayout = new ymaps.templateLayoutFactory.createClass(
+                        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+                    ),
+
+                    myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
+                        hintContent: '',
+                        balloonContent: ''
+                    }, {
+                        iconLayout: 'default#image',
+                        iconImageHref: 'img/icons/interactive-map-pin.svg',
+                        iconImageSize: [218, 142],
+                        iconImageOffset: [-40, -140]
                     });
-                let icon = 'img/icons/interactive-map-pin.svg';
-                new google.maps.Marker({
-                    position: academy,
-                    icon: icon,
-                    map: map
-                });
+
+                myMap.geoObjects.add(myPlacemark);
             }
         </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmOMDA4nD21-WYWl5t-G4hKMEM39hL9l8&callback=initMap"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
