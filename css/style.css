@@ -682,13 +682,24 @@ a.cart-link {
     margin-right: 5px;
 }
 
-.visually--hidden {
+.visually--hidden:not(:focus):not(:active),
+input[type="checkbox"].visually--hidden,
+input[type="radio"].visually--hidden {
     position: absolute;
-    overflow: hidden;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    height: 1px; width: 1px;
-    margin: -1px; padding: 0; border: 0;
+    overflow: hidden;
 }
+
 .btn {
     background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
@@ -1454,7 +1465,7 @@ a.cart-link {
 }
 
 .filter-fat label:not(:last-of-type) {
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 .filter-fillers label:not(:last-of-type) {
@@ -1518,6 +1529,42 @@ a.cart-link {
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 10px;
+}
+
+.filters .radio {
+    position: relative;
+    cursor: pointer;
+}
+
+.radio input[type="radio"] + .radio-indicator {
+    position: absolute;
+    top: -3px;
+    left: -32px;
+
+    width: 22px;
+    height: 22px;
+    opacity: 0.8;
+
+    background-image: url("../img/icons/radio-off.svg");
+    background-repeat: no-repeat;
+}
+
+.radio input[type="radio"]:hover + .radio-indicator,
+.radio input[type="radio"]:focus + .radio-indicator {
+    opacity: 1;
+}
+
+.radio input[type="radio"]:checked + .radio-indicator {
+    background-image: url("../img/icons/radio-on.svg");
+}
+
+.radio--blocked input[type="radio"] + .radio-indicator,
+.radio--blocked input[type="radio"]:hover + .radio-indicator,
+.radio--blocked input[type="radio"]:focus + .radio-indicator,
+.radio--blocked input[type="radio"]:active + .radio-indicator,
+.radio--blocked input[type="radio"]:checked + .radio-indicator {
+    opacity: 0.4;
+    cursor: none;
 }
 
 .filters option:first-child {

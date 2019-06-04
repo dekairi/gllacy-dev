@@ -202,16 +202,29 @@
                         <div class="filter--wrap">
                             <label for="fat">Жирность:</label>
                             <div class="filter-fat" id="fat">
-                                <label for="percentage-0">0%</label>
-                                <input id="percentage-0" type="radio" name="fat" value="0">
+                                <label class="radio">
+                                    <input class="visually--hidden" type="radio" name="fat" value="0">
+                                    <span class="radio-indicator"></span>
+                                    0%
+                                </label>
 
-                                <label for="percentage-10">до 10%</label>
-                                <input id="percentage-10" type="radio" name="fat" value="10" checked>
+                                <label class="radio">
+                                    <input class="visually--hidden" type="radio" name="fat" value="10" checked>
+                                    <span class="radio-indicator"></span>
+                                    до 10%
+                                </label>
 
-                                <label for="percentage-30">до 30%</label>
-                                <input id="percentage-30" type="radio" name="fat" value="30">
+                                <label class="radio">
+                                    <input class="visually--hidden" type="radio" name="fat" value="30" checked>
+                                    <span class="radio-indicator"></span>
+                                    до 30%
+                                </label>
 
-                                <label for="percentage-1">выше 30%</label>
+                                <label class="radio">
+                                    <input class="visually--hidden" type="radio" name="fat" value="1" checked>
+                                    <span class="radio-indicator"></span>
+                                    выше 30%
+                                </label>
                                 <input id="percentage-1" type="radio" name="fat" value="1">
                             </div>
                         </div>
