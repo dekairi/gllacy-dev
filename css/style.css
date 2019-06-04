@@ -724,6 +724,10 @@ a.cart-link {
     padding: 13px 40px;
 }
 
+.slide-1 .btn {
+    margin-top: 5px;
+}
+
 .slider p {
     margin: 120px 0 30px 0;
 }
@@ -825,14 +829,9 @@ input[type="radio"].visually--hidden {
 
 .btn:hover,
 .btn:focus {
-    background-color: #F7F6F3;
-    background-image: -webkit-gradient( linear, left top, right top, from(rgba(231,74,53, 0.8)), to(rgba(242,104,67, 0.8)));
-    background-image: -webkit-linear-gradient( left, rgba(231,74,53, 0.8) 0%, rgba(242,104,67, 0.8) 100%);
-    background-image: -o-linear-gradient( left, rgba(231,74,53, 0.8) 0%, rgba(242,104,67, 0.8) 100%);
-    background-image: linear-gradient( 90deg, rgba(231,74,53, 0.8) 0%, rgba(242,104,67, 0.8) 100%);
-    -webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.004);
-    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.004);
-    color: #F7F6F3;
+    background: rgba(255, 255, 255, 0.2) linear-gradient(0deg, #E74A35 0%, #F26843 100%);
+    box-shadow: 0 2px 2px 0 #AC1000;
+    color: #FFFFFF;
 }
 
 .btn:active {
