@@ -1470,11 +1470,41 @@ a.cart-link {
     align-items: flex-end;
 }
 
+.sort-by--wrap {
+    position: relative;
+}
+
 .sort--wrap:not(:last-child) {
     margin-bottom: 20px;
 }
 
-.filter--wrap {
+.sort-by--wrap::after {
+    border: 10px solid #FFFFFF;
+    border-right-width: 5.5px;
+    border-right-color: transparent;
+    border-left-width: 5.5px;
+    border-left-color: transparent;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-bottom: 0;
+    right: 16px;
+    bottom: 14px;
+    cursor: pointer;
+}
+
+.sort-by--wrap:hover::after,
+.sort-by--wrap:focus::after {
+    border: 10px solid #323232;
+    border-right-width: 5.5px;
+    border-right-color: transparent;
+    border-left-width: 5.5px;
+    border-left-color: transparent;
+    border-bottom: 0;
+}
+
+.filter--wrap,
+.sort-by--wrap {
     display: flex;
     flex-direction: column;
 }
