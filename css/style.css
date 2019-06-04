@@ -1469,7 +1469,7 @@ input[type="radio"].visually--hidden {
 }
 
 .filter-fillers label:not(:last-of-type) {
-    margin-right: 25px;
+    margin-right: 60px;
 }
 
 .filters .filter-fat {
@@ -1563,6 +1563,43 @@ input[type="radio"].visually--hidden {
 .radio--blocked input[type="radio"]:focus + .radio-indicator,
 .radio--blocked input[type="radio"]:active + .radio-indicator,
 .radio--blocked input[type="radio"]:checked + .radio-indicator {
+    opacity: 0.4;
+    cursor: none;
+}
+
+.filters .checkbox {
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: -2px;
+    left: -35px;
+
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+
+    background-image: url("../img/icons/checkbox-off.svg");
+    background-repeat: no-repeat;
+}
+
+.checkbox input[type="checkbox"]:hover + .checkbox-indicator,
+.checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+    opacity: 1;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+    background-image: url("../img/icons/checkbox-on.svg");
+    width: 24px;
+}
+
+.checkbox--blocked input[type="checkbox"] + .checkbox-indicator,
+.checkbox--blocked input[type="checkbox"]:hover + .checkbox-indicator,
+.checkbox--blocked input[type="checkbox"]:focus + .checkbox-indicator,
+.checkbox--blocked input[type="checkbox"]:active + .checkbox-indicator,
+.checkbox--blocked input[type="checkbox"]:checked + .checkbox-indicator {
     opacity: 0.4;
     cursor: none;
 }
