@@ -20,7 +20,7 @@
                                 <h2 class="visually--hidden">Меню каталога</h2>
                                 <ul class="catalog-menu-list">
                                     <li><a class="catalog-menu-item catalog-menu-item-new" href="#">Новинки</a></li>
-                                    <li><a class="catalog-menu-item" href="catalog.html" target="_blank">Сливочное</a></li>
+                                    <li><a class="catalog-menu-item" href="catalog.html">Сливочное</a></li>
                                     <li><a class="catalog-menu-item" href="#">Щербеты</a></li>
                                     <li><a class="catalog-menu-item" href="#">Фруктовый лёд</a></li>
                                     <li><a class="catalog-menu-item" href="#">Мелорин</a></li>
@@ -414,34 +414,6 @@
         <div id="overlay" class="overlay"></div>
 
         <script src="https://api-maps.yandex.ru/2.1/?apikey=<cd34823f-0b8b-4aba-be82-72027d93120e>&lang=en_US" type="text/javascript"></script>
-        <script>
-            ymaps.ready(init);
-            function init(){
-                let myMap = new ymaps.Map('map', {
-                        center: [59.939300, 30.329350],
-                        zoom: 16,
-                        controls: []
-                    }, {
-                        searchControlProvider: 'yandex#search'
-                    }),
-
-                    MyIconContentLayout = new ymaps.templateLayoutFactory.createClass(
-                        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-                    ),
-
-                    myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
-                        hintContent: '',
-                        balloonContent: ''
-                    }, {
-                        iconLayout: 'default#image',
-                        iconImageHref: 'img/icons/interactive-map-pin.svg',
-                        iconImageSize: [218, 142],
-                        iconImageOffset: [-40, -140]
-                    });
-
-                myMap.geoObjects.add(myPlacemark);
-            }
-        </script>
-        <script src="js/script.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

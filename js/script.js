@@ -56,4 +56,32 @@ window.addEventListener('DOMContentLoaded', function () {
             slides[i].classList.remove('slide--active');
         }
     }
+
+    //map
+    ymaps.ready(init);
+    function init() {
+        let myMap = new ymaps.Map('map', {
+                center: [59.939300, 30.329350],
+                zoom: 16,
+                controls: []
+            }, {
+                searchControlProvider: 'yandex#search'
+            }),
+
+            MyIconContentLayout = new ymaps.templateLayoutFactory.createClass(
+                '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+            ),
+
+            myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
+                hintContent: '',
+                balloonContent: ''
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/icons/interactive-map-pin.svg',
+                iconImageSize: [218, 142],
+                iconImageOffset: [-40, -140]
+            });
+
+        myMap.geoObjects.add(myPlacemark);
+    }
 });
