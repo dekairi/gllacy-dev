@@ -72,6 +72,8 @@ img {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
 }
 
 .main-nav .header--wrap {
@@ -683,7 +685,6 @@ a.cart-link {
     margin-top: -125px;
     position: absolute;
     width: 100%;
-    z-index: -1;
 }
 
 .slide:not(.slide--active) {
@@ -722,6 +723,8 @@ a.cart-link {
     font-size: 32px;
     line-height: 44px;
     padding: 13px 40px;
+    position: relative;
+    z-index: 2;
 }
 
 .slide-1 .btn {
@@ -830,7 +833,7 @@ input[type="radio"].visually--hidden {
 .btn:hover,
 .btn:focus {
     background-color: rgba(255, 255, 255, 0.2);
-    background-image: linear-gradient(0deg, #EF7A63 0%, #EC715F 100%);
+    background-image: linear-gradient(0deg, #EF7A63 0%, #EC705E 100%);
     box-shadow: 0 2px 2px 0 #AC1000;
     color: #FFFFFF;
 }
