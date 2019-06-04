@@ -600,6 +600,7 @@ a.cart-link {
     margin-top: -125px;
     position: absolute;
     width: 100%;
+    z-index: -1;
 }
 
 .slide:not(.slide--active) {
