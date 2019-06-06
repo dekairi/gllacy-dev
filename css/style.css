@@ -1,20 +1,20 @@
 @font-face {
     font-family: "Roboto";
-    src: url("../fonts/robotobold.woff") format("woff"), url("../fonts/robotobold.woff2") format("woff2");
+    src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url("../fonts/roboto.woff") format("woff"), url("../fonts/roboto.woff2") format("woff2");
+    src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url("../fonts/robotomedium.woff") format("woff"), url("../fonts/robotomedium.woff2") format("woff2");
+    src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
 }
@@ -49,7 +49,9 @@ img {
     height: auto;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
@@ -104,6 +106,7 @@ img {
 .menu-list {
     min-width: 700px;
     position: relative;
+    margin-bottom: 2px;
 }
 
 .menu-item:first-child:hover .catalog-menu {
@@ -187,12 +190,12 @@ li.catalog-menu-item--current a.catalog-menu-item:hover {
     line-height: 30px;
 }
 
-.catalog-menu li:first-child a {
+.catalog-menu a.catalog-menu-item-new {
     font-weight: 700;
     line-height: 16px;
 }
 
-.catalog-menu li:first-child a::after {
+.catalog-menu .catalog-menu-item:first-child::after {
     position: absolute;
     content: "";
     width: 128px;
@@ -1798,6 +1801,7 @@ input[type="radio"].visually--hidden {
     border-left-color: transparent;
     content: "";
     display: inline-block;
+    vertical-align: baseline;
     position: absolute;
     border-bottom: 0;
     right: 16px;
@@ -1926,6 +1930,7 @@ input[type="radio"].visually--hidden {
 
 .label {
     display: inline-block;
+    vertical-align: baseline;
     padding: 0 0 5px 13px;
 }
 
