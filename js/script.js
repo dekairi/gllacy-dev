@@ -84,4 +84,147 @@ window.addEventListener("DOMContentLoaded", function () {
 
         myMap.geoObjects.add(myPlacemark);
     }
+
+    //radio buttons
+    let radioGroup = function (domNode) {
+        this.domNode = domNode;
+        this.radioButtons = [];
+        this.firstRadioButton  = null;
+        this.lastRadioButton   = null;
+    };
+
+    radioGroup.prototype.init = function () {
+        if (!this.domNode.getAttribute('role')) {
+            this.domNode.setAttribute('role', 'radiogroup');
+        }
+
+        let elRadioButtons = this.domNode.querySelectorAll('[role=radio]');
+
+        for (let i = 0; i < elRadioButtons.length; i++) {
+            let elRadioButton = new radioButton(elRadioButtons[i], this);
+            elRadioButton.init();
+            this.radioButtons.push(elRadioButton);
+
+            if (!this.firstRadioButton) {
+                this.firstRadioButton = elRadioButton;
+            }
+            this.lastRadioButton = elRadioButton;
+        }
+        this.firstRadioButton.domNode.tabIndex = 0;
+    };
+
+    radioGroup.prototype.setChecked  = function (currentItem) {
+        for (let i = 0; i < this.radioButtons.length; i++) {
+            let elRadioButton = this.radioButtons[i];
+            elRadioButton.domNode.setAttribute('aria-checked', 'false');
+            elRadioButton.domNode.tabIndex = -1;
+        }
+        currentItem.domNode.setAttribute('aria-checked', 'true');
+        currentItem.domNode.tabIndex = 0;
+        currentItem.domNode.focus();
+    };
+
+    radioGroup.prototype.setCheckedToPreviousItem = function (currentItem) {
+        let index;
+
+        if (currentItem === this.firstRadioButton) {
+            this.setChecked(this.lastRadioButton);
+        }
+        else {
+            index = this.radioButtons.indexOf(currentItem);
+            this.setChecked(this.radioButtons[index - 1]);
+        }
+    };
+
+    radioGroup.prototype.setCheckedToNextItem = function (currentItem) {
+        let index;
+
+        if (currentItem === this.lastRadioButton) {
+            this.setChecked(this.firstRadioButton);
+        }
+        else {
+            index = this.radioButtons.indexOf(currentItem);
+            this.setChecked(this.radioButtons[index + 1]);
+        }
+    };
+
+    let radioButton = function (domNode, groupObj) {
+        this.domNode = domNode;
+        this.radioGroup = groupObj;
+
+        this.keyCode = Object.freeze({
+            'RETURN': 13,
+            'SPACE': 32,
+            'END': 35,
+            'HOME': 36,
+            'LEFT': 37,
+            'UP': 38,
+            'RIGHT': 39,
+            'DOWN': 40
+        });
+    };
+
+    radioButton.prototype.init = function () {
+        this.domNode.tabIndex = -1;
+        this.domNode.setAttribute('aria-checked', 'false');
+
+        this.domNode.addEventListener('keydown', this.handleKeydown.bind(this));
+        this.domNode.addEventListener('click', this.handleClick.bind(this));
+        this.domNode.addEventListener('focus', this.handleFocus.bind(this));
+        this.domNode.addEventListener('blur', this.handleBlur.bind(this));
+    };
+
+    radioButton.prototype.handleKeydown = function (event) {
+        let tgt = event.currentTarget,
+            flag = false,
+            clickEvent;
+
+        switch (event.keyCode) {
+            case this.keyCode.SPACE:
+            case this.keyCode.RETURN:
+                this.radioGroup.setChecked(this);
+                flag = true;
+                break;
+
+            case this.keyCode.UP:
+                this.radioGroup.setCheckedToPreviousItem(this);
+                flag = true;
+                break;
+
+            case this.keyCode.DOWN:
+                this.radioGroup.setCheckedToNextItem(this);
+                flag = true;
+                break;
+
+            case this.keyCode.LEFT:
+                this.radioGroup.setCheckedToPreviousItem(this);
+                flag = true;
+                break;
+
+            case this.keyCode.RIGHT:
+                this.radioGroup.setCheckedToNextItem(this);
+                flag = true;
+                break;
+
+            default:
+                break;
+        }
+
+        if (flag) {
+            event.stopPropagation();
+            event.preventDefault();
+        }
+    };
+
+    radioButton.prototype.handleClick = function (event) {
+        this.radioGroup.setChecked(this);
+    };
+
+    radioButton.prototype.handleFocus = function (event) {
+        this.domNode.classList.add('focus');
+    };
+
+    radioButton.prototype.handleBlur = function (event) {
+        this.domNode.classList.remove('focus');
+    };
 });
