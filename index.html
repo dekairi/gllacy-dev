@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
     <head>
         <meta charset="utf-8">
         <title>Магазин мороженого Gllacy</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
         <header class="main-header">
@@ -280,10 +280,11 @@
 
             <div class="contacts--wrap">
                 <section class="map">
-                    <!-- TODO: finish the map after JS (Yandex/Google) -->
                     <h2 class="visually--hidden">Мы на карте</h2>
+                    <div class="map-image--wrap">
+                        <img class="map-image" src="img/content/map.png" alt="Магазин расположен по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
+                    </div>
                     <div class="interactive-map" id="map"></div>
-                    <img class="map-image" src="img/content/map.png" alt="Магазин расположен по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
                 </section>
 
                 <section class="contacts">
@@ -402,14 +403,14 @@
             </div>
         </footer>
         
-        <section id="feedback" class="modal modal-feedback modal--hide">
+        <section id="feedback" class="modal modal-feedback">
             <b>Мы обязательно вам ответим!</b>
             <button id="btn-close-feedback" class="btn-close">Закрыть</button>
             <h2 class="visually--hidden">Обратная связь</h2>
-            <form action="http://echo.htmlacademy.ru" method="post">
-                <input type="text" placeholder="Как вас зовут?" aria-label="Имя" required>
-                <input type="email" placeholder="Ваша почта для ответа?" aria-label="Электронная почта" required>
-                <textarea placeholder="Напишите что-нибудь..." aria-label="Текст-обращения" required></textarea>
+            <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
+                <input class="feedback-name" type="text" placeholder="Как вас зовут?" aria-label="Имя">
+                <input class="feedback-email" type="email" placeholder="Ваша почта для ответа?" aria-label="Электронная почта">
+                <textarea class="feedback-message" placeholder="Напишите что-нибудь..." aria-label="Текст-обращения"></textarea>
                 <button class="btn" type="submit">Отправить</button>
             </form>
         </section>
