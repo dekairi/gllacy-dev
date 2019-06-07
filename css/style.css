@@ -1915,7 +1915,8 @@ input[type="radio"].visually--hidden {
     line-height: 16px;
 }
 
-.filters label {
+.filters label,
+.filter-fillers .checkbox {
     font-size: 16px;
     line-height: 18px;
     margin: 0 0 5px 15px;
