@@ -109,13 +109,13 @@ window.addEventListener("DOMContentLoaded", function () {
     }
 
     //map
-    let elMap = document.querySelector(".map-image--wrap");
-    elMap.classList.toggle("map-image--hide");
-    let elInteractiveMap = document.querySelector(".interactive-map");
-    elInteractiveMap.classList.toggle("interactive-map--show");
-
     ymaps.ready(init);
     function init() {
+        let elMap = document.querySelector(".map-image--wrap");
+        elMap.classList.toggle("map-image--hide");
+        let elInteractiveMap = document.querySelector(".interactive-map");
+        elInteractiveMap.classList.toggle("interactive-map--show");
+
         let myMap = new ymaps.Map("map", {
                 center: [59.939300, 30.329350],
                 zoom: 16,
