@@ -1788,11 +1788,7 @@ input[type="radio"].visually--hidden {
 
 .filters .filter-fat {
     width: 417px;
-    padding: 10.5px 0 0 35px;
-}
-
-.filter-fat label:not(:last-of-type) {
-    margin-right: 30px;
+    padding: 10.5px 15px 0 35px;
 }
 
 .filter-price {
@@ -1916,7 +1912,8 @@ input[type="radio"].visually--hidden {
 }
 
 .filters label,
-.filter-fillers .checkbox {
+.filter-fillers .checkbox,
+.filters .radio {
     font-size: 16px;
     line-height: 18px;
     margin: 0 0 5px 15px;
@@ -1929,6 +1926,12 @@ input[type="radio"].visually--hidden {
 .filters .radio {
     position: relative;
     cursor: pointer;
+}
+
+.filter-fat {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .radio input[type="radio"] + .radio-indicator {
