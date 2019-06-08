@@ -701,6 +701,7 @@ a.cart-link {
     margin-top: -125px;
     position: absolute;
     width: 100%;
+    height: 880px;
 }
 
 .slide:not(.slide--active) {
@@ -749,6 +750,10 @@ a.cart-link {
 
 .slider p {
     margin: 120px 0 30px 0;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    width: 700px;
 }
 
 .slide-2 p,
@@ -766,12 +771,6 @@ a.cart-link {
 
 .slider .slide-3 {
     background: url("../img/bg/slider-3.png") no-repeat center center;
-}
-
-.slider p {
-    font-size: 60px;
-    line-height: 60px;
-    text-align: center;
 }
 
 .slider-dots-list {
@@ -969,6 +968,7 @@ input[type="radio"].visually--hidden {
     display: none;
     position: absolute;
     left: -5px;
+    top: 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
@@ -1359,6 +1359,7 @@ input[type="radio"].visually--hidden {
 
 .contacts span.contacts-address {
     margin-bottom: 18px;
+    max-width: 250px;
 }
 
 .contacts a.contacts-phone {
@@ -1763,6 +1764,10 @@ input[type="radio"].visually--hidden {
     height: 38px;
 }
 
+select.sort-by::-ms-expand {
+    display: none;
+}
+
 .filters select.sort-by:hover,
 .filters select.sort-by:focus,
 .filters select.sort-by:active {
@@ -1876,7 +1881,7 @@ input[type="radio"].visually--hidden {
     position: absolute;
     border-bottom: 0;
     right: 16px;
-    bottom: 14px;
+    bottom: 13px;
     cursor: pointer;
 }
 
